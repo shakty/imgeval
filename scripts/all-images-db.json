@@ -1,513 +1,1601 @@
 [{
-    "date": "animal-cat-kitten-funny-56857.jpeg_undefined_undefined",
+    "date": "100a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 1,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "animal-cat-kitten-funny-56857.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "100a.jpg"
 }, {
-    "date": "ball-football-exercise-playground-159838.jpeg_undefined_undefined",
+    "date": "100b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 2,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "ball-football-exercise-playground-159838.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "100b.jpg"
 }, {
-    "date": "bernina-railway-sweeping-viaduct-brusion-bernina-159252.jpeg_undefined_undefined",
+    "date": "10a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 3,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "bernina-railway-sweeping-viaduct-brusion-bernina-159252.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "10a.jpg"
 }, {
-    "date": "coffee-beans-blue-red-162707.jpeg_undefined_undefined",
+    "date": "10b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 4,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "coffee-beans-blue-red-162707.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "10b.jpg"
 }, {
-    "date": "droplets-fountain-water-bird-71544.jpeg_undefined_undefined",
+    "date": "11a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 5,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "droplets-fountain-water-bird-71544.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "11a.jpg"
 }, {
-    "date": "fitness-jump-health-woman-56615.jpeg_undefined_undefined",
+    "date": "11b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 6,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "fitness-jump-health-woman-56615.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "11b.jpg"
 }, {
-    "date": "gummi-bears-fruit-gums-bear-sweetness-65240.jpeg_undefined_undefined",
+    "date": "12a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 7,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "gummi-bears-fruit-gums-bear-sweetness-65240.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "12a.jpg"
 }, {
-    "date": "hands-shoes-jewellery-jewelry.jpg_undefined_undefined",
+    "date": "12b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 8,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "hands-shoes-jewellery-jewelry.jpg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "12b.jpg"
 }, {
-    "date": "moritzburg-castle-germany-royalty-free-68153.jpeg_undefined_undefined",
+    "date": "13a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 9,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "moritzburg-castle-germany-royalty-free-68153.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "13a.jpg"
 }, {
-    "date": "nuclear-weapons-test-nuclear-weapon-weapons-test-explosion-73909.jpeg_undefined_undefined",
+    "date": "13b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 10,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "nuclear-weapons-test-nuclear-weapon-weapons-test-explosion-73909.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "13b.jpg"
 }, {
-    "date": "path-andar-field-landscape-160636.jpeg_undefined_undefined",
+    "date": "14a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 11,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "path-andar-field-landscape-160636.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "14a.jpg"
 }, {
-    "date": "pexels-photo-109836.jpeg_undefined_undefined",
+    "date": "14b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 12,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-109836.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "14b.jpg"
 }, {
-    "date": "pexels-photo-120265.jpeg_undefined_undefined",
+    "date": "15a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 13,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-120265.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "15a.jpg"
 }, {
-    "date": "pexels-photo-127726.jpeg_undefined_undefined",
+    "date": "15b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 14,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-127726.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "15b.jpg"
 }, {
-    "date": "pexels-photo-131684.jpeg_undefined_undefined",
+    "date": "16a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 15,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-131684.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "16a.jpg"
 }, {
-    "date": "pexels-photo-165992.jpeg_undefined_undefined",
+    "date": "16b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 16,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-165992.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "16b.jpg"
 }, {
-    "date": "pexels-photo-193347.jpeg_undefined_undefined",
+    "date": "17a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 17,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-193347.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "17a.jpg"
 }, {
-    "date": "pexels-photo-206354.jpeg_undefined_undefined",
+    "date": "17b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 18,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-206354.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "17b.jpg"
 }, {
-    "date": "pexels-photo-210611.jpeg_undefined_undefined",
+    "date": "18a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 19,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-210611.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "18a.jpg"
 }, {
-    "date": "pexels-photo-211707.jpeg_undefined_undefined",
+    "date": "18b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 20,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-211707.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "18b.jpg"
 }, {
-    "date": "pexels-photo-221310.jpeg_undefined_undefined",
+    "date": "19a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 21,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-221310.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "19a.jpg"
 }, {
-    "date": "pexels-photo-235317.jpeg_undefined_undefined",
+    "date": "19b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 22,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-235317.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "19b.jpg"
 }, {
-    "date": "pexels-photo-235732.jpeg_undefined_undefined",
+    "date": "1a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 23,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-235732.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "1a.jpg"
 }, {
-    "date": "pexels-photo-235975.jpeg_undefined_undefined",
+    "date": "1b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 24,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-235975.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "1b.jpg"
 }, {
-    "date": "pexels-photo-242138.jpeg_undefined_undefined",
+    "date": "20a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 25,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-242138.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "20a.jpg"
 }, {
-    "date": "pexels-photo-247723.jpeg_undefined_undefined",
+    "date": "20b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 26,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-247723.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "20b.jpg"
 }, {
-    "date": "pexels-photo-258198.jpeg_undefined_undefined",
+    "date": "21a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 27,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-258198.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "21a.jpg"
 }, {
-    "date": "pexels-photo-262945.jpeg_undefined_undefined",
+    "date": "21b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 28,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-262945.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "21b.jpg"
 }, {
-    "date": "pexels-photo-264416.jpeg_undefined_undefined",
+    "date": "22a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 29,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-264416.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "22a.jpg"
 }, {
-    "date": "pexels-photo-268095.jpeg_undefined_undefined",
+    "date": "22b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 30,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-268095.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "22b.jpg"
 }, {
-    "date": "pexels-photo-283012.jpeg_undefined_undefined",
+    "date": "23a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 31,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-283012.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "23a.jpg"
 }, {
-    "date": "pexels-photo-302482.jpeg_undefined_undefined",
+    "date": "23b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 32,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-302482.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "23b.jpg"
 }, {
-    "date": "pexels-photo-315999.jpeg_undefined_undefined",
+    "date": "24a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 33,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-315999.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "24a.jpg"
 }, {
-    "date": "pexels-photo-340876.png.jpeg_undefined_undefined",
+    "date": "24b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 34,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-340876.png.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "24b.jpg"
 }, {
-    "date": "pexels-photo-348389.jpeg_undefined_undefined",
+    "date": "25a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 35,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-348389.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "25a.jpg"
 }, {
-    "date": "pexels-photo-356093.jpeg_undefined_undefined",
+    "date": "25b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 36,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-356093.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "25b.jpg"
 }, {
-    "date": "pexels-photo-364495.jpeg_undefined_undefined",
+    "date": "26a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 37,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-364495.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "26a.jpg"
 }, {
-    "date": "pexels-photo-373328.jpeg_undefined_undefined",
+    "date": "26b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 38,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-373328.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "26b.jpg"
 }, {
-    "date": "pexels-photo-373564.jpeg_undefined_undefined",
+    "date": "27a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 39,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-373564.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "27a.jpg"
 }, {
-    "date": "pexels-photo-379964.jpeg_undefined_undefined",
+    "date": "27b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 40,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-379964.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "27b.jpg"
 }, {
-    "date": "pexels-photo-394353.jpeg_undefined_undefined",
+    "date": "28a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 41,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-394353.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "28a.jpg"
 }, {
-    "date": "pexels-photo-406583.jpeg_undefined_undefined",
+    "date": "28b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 42,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-406583.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "28b.jpg"
 }, {
-    "date": "pexels-photo-418284.jpeg_undefined_undefined",
+    "date": "29a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 43,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-418284.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "29a.jpg"
 }, {
-    "date": "pexels-photo-41831.jpeg_undefined_undefined",
+    "date": "29b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 44,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-41831.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "29b.jpg"
 }, {
-    "date": "pexels-photo-434137.jpeg_undefined_undefined",
+    "date": "2a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 45,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-434137.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "2a.jpg"
 }, {
-    "date": "pexels-photo-444635.jpeg_undefined_undefined",
+    "date": "2b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 46,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-444635.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "2b.jpg"
 }, {
-    "date": "pexels-photo-53040.jpeg_undefined_undefined",
+    "date": "30a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 47,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-53040.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "30a.jpg"
 }, {
-    "date": "pexels-photo-534020.jpeg_undefined_undefined",
+    "date": "30b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 48,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-534020.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "30b.jpg"
 }, {
-    "date": "pexels-photo-551659.jpeg_undefined_undefined",
+    "date": "31a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 49,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-551659.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "31a.jpg"
 }, {
-    "date": "pexels-photo-555476.jpeg_undefined_undefined",
+    "date": "31b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 50,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-555476.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "31b.jpg"
 }, {
-    "date": "pexels-photo-55636.jpeg_undefined_undefined",
+    "date": "32a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 51,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-55636.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "32a.jpg"
 }, {
-    "date": "pexels-photo-568019.jpeg_undefined_undefined",
+    "date": "32b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 52,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-568019.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "32b.jpg"
 }, {
-    "date": "pexels-photo-64112.jpeg_undefined_undefined",
+    "date": "33a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 53,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-64112.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "33a.jpg"
 }, {
-    "date": "pexels-photo-66218.jpeg_undefined_undefined",
+    "date": "33b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 54,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-66218.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "33b.jpg"
 }, {
-    "date": "pexels-photo-67094.jpeg_undefined_undefined",
+    "date": "34a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 55,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-67094.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "34a.jpg"
 }, {
-    "date": "pexels-photo-67383.jpeg_undefined_undefined",
+    "date": "34b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 56,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-67383.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "34b.jpg"
 }, {
-    "date": "pexels-photo-72581.jpeg_undefined_undefined",
+    "date": "35a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 57,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo-72581.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "35a.jpg"
 }, {
-    "date": "pexels-photo.jpg_undefined_undefined",
+    "date": "35b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 58,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "pexels-photo.jpg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "35b.jpg"
 }, {
-    "date": "rocket-launch-rocket-take-off-nasa-73872.jpeg_undefined_undefined",
+    "date": "36a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 59,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "rocket-launch-rocket-take-off-nasa-73872.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "36a.jpg"
 }, {
-    "date": "rose-hip-canina-fruit-red-47737.jpeg_undefined_undefined",
+    "date": "36b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 60,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "rose-hip-canina-fruit-red-47737.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "36b.jpg"
 }, {
-    "date": "soccer-football-sport-ball-159698.jpeg_undefined_undefined",
+    "date": "37a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 61,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "soccer-football-sport-ball-159698.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "37a.jpg"
 }, {
-    "date": "water-lilies-nuphar-aquatic-plants-flowers-158623.jpeg_undefined_undefined",
+    "date": "37b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 62,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "water-lilies-nuphar-aquatic-plants-flowers-158623.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "37b.jpg"
 }, {
-    "date": "white-blossom-sea-of-flowers-federal-government-flowers-65965.jpeg_undefined_undefined",
+    "date": "38a.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 63,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "white-blossom-sea-of-flowers-federal-government-flowers-65965.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "38a.jpg"
 }, {
-    "date": "yellowstone-national-park-wyoming-landscape-sunrise-139391.jpeg_undefined_undefined",
+    "date": "38b.jpg_undefined_undefined",
     "treatment": "undefined_undefined",
     "creator": "!?_undefined",
     "round": "!?_NaN",
     "count": 64,
-    "dir": "/tmp/nodegame/games/imgscore/public/imgscore/",
-    "filename": "yellowstone-national-park-wyoming-landscape-sunrise-139391.jpeg"
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "38b.jpg"
+}, {
+    "date": "39a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 65,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "39a.jpg"
+}, {
+    "date": "39b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 66,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "39b.jpg"
+}, {
+    "date": "3a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 67,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "3a.jpg"
+}, {
+    "date": "3b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 68,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "3b.jpg"
+}, {
+    "date": "40a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 69,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "40a.jpg"
+}, {
+    "date": "40b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 70,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "40b.jpg"
+}, {
+    "date": "41a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 71,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "41a.jpg"
+}, {
+    "date": "41b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 72,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "41b.jpg"
+}, {
+    "date": "42a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 73,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "42a.jpg"
+}, {
+    "date": "42b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 74,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "42b.jpg"
+}, {
+    "date": "43a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 75,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "43a.jpg"
+}, {
+    "date": "43b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 76,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "43b.jpg"
+}, {
+    "date": "44a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 77,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "44a.jpg"
+}, {
+    "date": "44b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 78,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "44b.jpg"
+}, {
+    "date": "45a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 79,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "45a.jpg"
+}, {
+    "date": "45b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 80,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "45b.jpg"
+}, {
+    "date": "46a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 81,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "46a.jpg"
+}, {
+    "date": "46b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 82,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "46b.jpg"
+}, {
+    "date": "47a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 83,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "47a.jpg"
+}, {
+    "date": "47b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 84,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "47b.jpg"
+}, {
+    "date": "48a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 85,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "48a.jpg"
+}, {
+    "date": "48b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 86,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "48b.jpg"
+}, {
+    "date": "49a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 87,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "49a.jpg"
+}, {
+    "date": "49b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 88,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "49b.jpg"
+}, {
+    "date": "4a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 89,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "4a.jpg"
+}, {
+    "date": "4b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 90,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "4b.jpg"
+}, {
+    "date": "50a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 91,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "50a.jpg"
+}, {
+    "date": "50b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 92,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "50b.jpg"
+}, {
+    "date": "51a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 93,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "51a.jpg"
+}, {
+    "date": "51b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 94,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "51b.jpg"
+}, {
+    "date": "52a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 95,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "52a.jpg"
+}, {
+    "date": "52b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 96,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "52b.jpg"
+}, {
+    "date": "53a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 97,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "53a.jpg"
+}, {
+    "date": "53b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 98,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "53b.jpg"
+}, {
+    "date": "54a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 99,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "54a.jpg"
+}, {
+    "date": "54b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 100,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "54b.jpg"
+}, {
+    "date": "55a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 101,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "55a.jpg"
+}, {
+    "date": "55b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 102,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "55b.jpg"
+}, {
+    "date": "56a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 103,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "56a.jpg"
+}, {
+    "date": "56b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 104,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "56b.jpg"
+}, {
+    "date": "57a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 105,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "57a.jpg"
+}, {
+    "date": "57b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 106,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "57b.jpg"
+}, {
+    "date": "58a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 107,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "58a.jpg"
+}, {
+    "date": "58b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 108,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "58b.jpg"
+}, {
+    "date": "59a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 109,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "59a.jpg"
+}, {
+    "date": "59b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 110,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "59b.jpg"
+}, {
+    "date": "5a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 111,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "5a.jpg"
+}, {
+    "date": "5b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 112,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "5b.jpg"
+}, {
+    "date": "60a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 113,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "60a.jpg"
+}, {
+    "date": "60b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 114,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "60b.jpg"
+}, {
+    "date": "61a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 115,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "61a.jpg"
+}, {
+    "date": "61b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 116,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "61b.jpg"
+}, {
+    "date": "62a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 117,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "62a.jpg"
+}, {
+    "date": "62b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 118,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "62b.jpg"
+}, {
+    "date": "63a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 119,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "63a.jpg"
+}, {
+    "date": "63b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 120,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "63b.jpg"
+}, {
+    "date": "64a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 121,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "64a.jpg"
+}, {
+    "date": "64b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 122,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "64b.jpg"
+}, {
+    "date": "65a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 123,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "65a.jpg"
+}, {
+    "date": "65b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 124,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "65b.jpg"
+}, {
+    "date": "66a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 125,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "66a.jpg"
+}, {
+    "date": "66b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 126,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "66b.jpg"
+}, {
+    "date": "67a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 127,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "67a.jpg"
+}, {
+    "date": "67b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 128,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "67b.jpg"
+}, {
+    "date": "68a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 129,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "68a.jpg"
+}, {
+    "date": "68b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 130,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "68b.jpg"
+}, {
+    "date": "69a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 131,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "69a.jpg"
+}, {
+    "date": "69b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 132,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "69b.jpg"
+}, {
+    "date": "6a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 133,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "6a.jpg"
+}, {
+    "date": "6b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 134,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "6b.jpg"
+}, {
+    "date": "70a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 135,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "70a.jpg"
+}, {
+    "date": "70b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 136,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "70b.jpg"
+}, {
+    "date": "71a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 137,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "71a.jpg"
+}, {
+    "date": "71b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 138,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "71b.jpg"
+}, {
+    "date": "72a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 139,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "72a.jpg"
+}, {
+    "date": "72b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 140,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "72b.jpg"
+}, {
+    "date": "73a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 141,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "73a.jpg"
+}, {
+    "date": "73b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 142,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "73b.jpg"
+}, {
+    "date": "74a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 143,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "74a.jpg"
+}, {
+    "date": "74b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 144,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "74b.jpg"
+}, {
+    "date": "75a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 145,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "75a.jpg"
+}, {
+    "date": "75b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 146,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "75b.jpg"
+}, {
+    "date": "76a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 147,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "76a.jpg"
+}, {
+    "date": "76b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 148,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "76b.jpg"
+}, {
+    "date": "77a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 149,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "77a.jpg"
+}, {
+    "date": "77b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 150,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "77b.jpg"
+}, {
+    "date": "78a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 151,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "78a.jpg"
+}, {
+    "date": "78b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 152,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "78b.jpg"
+}, {
+    "date": "79a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 153,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "79a.jpg"
+}, {
+    "date": "79b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 154,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "79b.jpg"
+}, {
+    "date": "7a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 155,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "7a.jpg"
+}, {
+    "date": "7b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 156,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "7b.jpg"
+}, {
+    "date": "80a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 157,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "80a.jpg"
+}, {
+    "date": "80b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 158,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "80b.jpg"
+}, {
+    "date": "81a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 159,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "81a.jpg"
+}, {
+    "date": "81b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 160,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "81b.jpg"
+}, {
+    "date": "82a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 161,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "82a.jpg"
+}, {
+    "date": "82b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 162,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "82b.jpg"
+}, {
+    "date": "83a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 163,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "83a.jpg"
+}, {
+    "date": "83b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 164,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "83b.jpg"
+}, {
+    "date": "84a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 165,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "84a.jpg"
+}, {
+    "date": "84b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 166,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "84b.jpg"
+}, {
+    "date": "85a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 167,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "85a.jpg"
+}, {
+    "date": "85b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 168,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "85b.jpg"
+}, {
+    "date": "86a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 169,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "86a.jpg"
+}, {
+    "date": "86b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 170,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "86b.jpg"
+}, {
+    "date": "87a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 171,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "87a.jpg"
+}, {
+    "date": "87b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 172,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "87b.jpg"
+}, {
+    "date": "88a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 173,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "88a.jpg"
+}, {
+    "date": "88b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 174,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "88b.jpg"
+}, {
+    "date": "89a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 175,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "89a.jpg"
+}, {
+    "date": "89b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 176,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "89b.jpg"
+}, {
+    "date": "8a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 177,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "8a.jpg"
+}, {
+    "date": "8b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 178,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "8b.jpg"
+}, {
+    "date": "90a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 179,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "90a.jpg"
+}, {
+    "date": "90b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 180,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "90b.jpg"
+}, {
+    "date": "91a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 181,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "91a.jpg"
+}, {
+    "date": "91b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 182,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "91b.jpg"
+}, {
+    "date": "92a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 183,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "92a.jpg"
+}, {
+    "date": "92b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 184,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "92b.jpg"
+}, {
+    "date": "93a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 185,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "93a.jpg"
+}, {
+    "date": "93b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 186,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "93b.jpg"
+}, {
+    "date": "94a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 187,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "94a.jpg"
+}, {
+    "date": "94b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 188,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "94b.jpg"
+}, {
+    "date": "95a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 189,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "95a.jpg"
+}, {
+    "date": "95b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 190,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "95b.jpg"
+}, {
+    "date": "96a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 191,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "96a.jpg"
+}, {
+    "date": "96b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 192,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "96b.jpg"
+}, {
+    "date": "97a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 193,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "97a.jpg"
+}, {
+    "date": "97b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 194,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "97b.jpg"
+}, {
+    "date": "98a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 195,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "98a.jpg"
+}, {
+    "date": "98b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 196,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "98b.jpg"
+}, {
+    "date": "99a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 197,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "99a.jpg"
+}, {
+    "date": "99b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 198,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "99b.jpg"
+}, {
+    "date": "9a.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 199,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "9a.jpg"
+}, {
+    "date": "9b.jpg_undefined_undefined",
+    "treatment": "undefined_undefined",
+    "creator": "!?_undefined",
+    "round": "!?_NaN",
+    "count": 200,
+    "dir": "C:\\Users\\t-sasama\\facerec\\nodegame-v4.3.2\\games\\imgscore\\public\\imgscore/",
+    "filename": "9b.jpg"
 }]

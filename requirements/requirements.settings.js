@@ -58,10 +58,10 @@ module.exports = {
      *
      * Client must have a resolution between the min and max specified
      */
-    viewportSize: {
-        minX: 800,
-        minY: 740
-    },
+    //viewportSize: {
+    //    minX: 800,
+    //    minY: 740
+    //},
 
     /**
      * ## cookieSupport

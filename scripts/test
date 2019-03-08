@@ -1,0 +1,80 @@
+    1  git
+    2  node
+    3  node --version
+    4  ls
+    5  mkdir facerec
+    6  cd facerec/
+    7  mv ../Downloads/nodegame-installer.js ./
+    8  cd
+    9  ls
+   10  cd facerec/
+   11  node nodegame-installer.js 
+   12  ls
+   13  cd nodegame-v4.3.2/
+   14  ls
+   15  node launcher.js 
+   16  ls
+   17  cd games
+   18  LS
+   19  git clone https://github.com/nodeGame/imgscore.git
+   20  ls
+   21  ls
+   22  cd imgscore/
+   23  ls
+   24  cd public/
+   25  ls
+   26  ..
+   27  ...
+   28  ..
+   29  cd ..
+   30  cd ..
+   31  cd ..
+   32  node launcher.js 
+   33  node launcher.js 
+   34  node launcher.js 
+   35  ..
+   36  cd ..
+   37  git clone https://github.com/nodeGame/nodegame-mturk.git
+   38  ls
+   39  cd nodegame-mturk/
+   40  ls
+   41  node ng-amt.js -R ../nodegame-v4.3.2/games/imgscore/data/room000001/bonus.csv 
+   42  npm install
+   43  cd ..
+   44  cd nodegame-v4.3.2/
+   45  node launcher.js 
+   46  dir
+   47  cd facerec/
+   48  dir
+   49  nodegame-v4.3.2/
+   50  dir
+   51  cd bin/
+   52  node nodegame create-game imageRecog
+   53  cd ..
+   54  www.nodegame-v4.3.2/
+   55  cd www.nodegame-v4.3.2/
+   56  dir
+   57  cd facerec/
+   58  dir
+   59  cd nodegame-v4.3.2/
+   60  ls
+   61  node launcher.js 
+   62  ls
+   63  cd games
+   64  git clone https://github.com/nodeGame/imgscore.git
+   65  ls
+   66  cd imgscore/
+   67  LS
+   68  ls
+   69  cd scripts/
+   70  ls
+   71  node index-images.js 
+   72  LS
+   73  node create-random-sets.js 
+   74  history
+   75  history -500 > history.txt
+   76  ls
+   77  more history.txt 
+   78  history -500 >> history.txt
+   79  history -1000 > test
+   80  history > test
