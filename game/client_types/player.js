@@ -41,6 +41,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         this.enoughSets = false;
 
         this.getSample = function() {
+            console.log('inside getSample')
             var that, sampleDiv;
             that = this;
             sampleDiv = W.getElementById('sample');
@@ -326,17 +327,17 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     stager.extendStage('instructions', {
         frame: 'instructions.htm'
     });
-
-    stager.extendStep('text', {
+                       
+    stager.extendStep('employmentIdentification', {
         cb: function () {
             
-            var next, s;
-            console.log('instructions');
-            s = node.game.settings;
-            W.setInnerHTML('nimages', s.NIMAGES);
-            W.setInnerHTML('sets_lowbound', s.SETS_MIN);
-            if (s.SETS_MIN !== 1) W.setInnerHTML('set_plural', 'sets');
-            W.setInnerHTML('sets_highbound', s.SETS_MAX);
+            var next
+            var s;
+            // s = node.game.settings;
+            // W.setInnerHTML('nimages', s.NIMAGES);
+            // W.setInnerHTML('sets_lowbound', s.SETS_MIN);
+            //if (s.SETS_MIN !== 1) W.setInnerHTML('set_plural', 'sets');
+            //W.setInnerHTML('sets_highbound', s.SETS_MAX);
 
             node.game.nextBtn = next = W.getElementById("doneButton");
             next.onclick = function() {
@@ -345,19 +346,17 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             };
 
             // Require sample images.
-            this.getSample();
+            //this.getSample();
         }
     });
 
-    stager.extendStep('text2', {
-        cb:  function() {
-            var s, ul, li;
-            var i, len;
+    stager.extendStep('FRS', {
+       cb: function() {
+        //    var s, ul, li;
+        //    var i, len;
 
-            console.log('instructions2');
-            
-            W.hide('instructions');
-            W.show("instructions2");
+            W.hide("employmentIdentificationPage");
+            W.show("FRSPage");
 
             // 
             //s = node.game.settings.SCORE_OPTIONS;
@@ -379,37 +378,62 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         }
     });
 
-    stager.extendStep('sample', {
+    stager.extendStep('faceComparison', {
         cb: function() {
-            var next, doneTimerSpan;
+
+        W.hide("FRSPage");
+        W.show("faceComparisonPage");
             
-            console.log('*** sample ! ***');
+        var next = W.getElementById("doneButton");
+        next.disabled = false;
 
-            W.hide('instructions2');
-            W.show("sample");
+        // cb: function() {
+        //     var next, doneTimerSpan;
             
-            next = W.getElementById("doneButton");
-            doneTimerSpan = W.getElementById("doneTimer");
+        //     console.log('faceComparison');
 
-            node.game.doneTimer =
-                node.widgets.append('VisualTimer', doneTimerSpan, {
-                    milliseconds: 30000,
-                    name: 'candonext',
-                    listeners: false,
-                    timeup: function() {
-                        next.disabled = false;
-                    }
-                });
+        //     W.hide('FRS');
+        //     W.show("faceComparison");
+            
+        //     next = W.getElementById("doneButton");
+        //     doneTimerSpan = W.getElementById("doneTimer");
 
-            node.game.doneTimer.start();
+        //     node.game.doneTimer =
+        //         node.widgets.append('VisualTimer', doneTimerSpan, {
+        //             milliseconds: 30000,
+        //             name: 'candonext',
+        //             listeners: false,
+        //             timeup: function() {
+        //                 next.disabled = false;
+        //             }
+        //         });
+
+        //     node.game.doneTimer.start();
         }
     });
 
-    // Scoring.
-    stager.extendStage('imgscore', {
+
+    //training
+
+    stager.extendStage('training', {
         frame: 'scorepage.htm'
     });
-    stager.extendStep('imgscore', {
+
+    stager.extendStep('identify', {
+        cb: imgscore
+    });
+
+    stager.extendStep('continue', {
+        cb: continueCb
+    });
+
+
+
+    // test
+    stager.extendStage('test', {
+        frame: 'scorepage.htm'
+    });
+    stager.extendStep('identify', {
         cb: imgscore
     });
     stager.extendStep('continue', {

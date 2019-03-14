@@ -16,21 +16,29 @@ module.exports = function(stager, settings) {
 
     stager
         .next('instructions')
-        .loop('imgscore', function() {
+        .loop('training', function(){
+            return !this.enoughSets
+        })
+        .loop('test', function() {
             return !this.enoughSets;
         })
         .next('thankyou')
         .gameover();
 
     stager.extendStage('instructions', {
-        steps: [ 'text', 'text2', 'sample' ]
+        steps: [ 'employmentIdentification', 'FRS', 'faceComparison' ]
     });
 
-    stager.extendStage('imgscore', {
-        steps: [ 'imgscore', 'continue' ]
+    stager.extendStage('training', {
+        steps: [ 'identify', 'continue' ]
     });
+
+    stager.extendStage('test', {
+        steps: [ 'identify2', 'continue2' ]
+    });
+
 
     // stager.skip('instructions');
 
-    return stager.getState();
+    // return stager.getState();
 };
