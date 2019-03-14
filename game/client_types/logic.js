@@ -211,7 +211,13 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         // Client is requesting a random sample.
         node.on('get.sample', function(msg) {
             console.log('**** Get SAMPLE! ' + msg.from + ' ***');
-            checkAndCreateState(msg.from);
+            var res = [], pair;    
+	    for (var i = 0; i < node.game.settings.TRAINING_IMAGES.length; i++) {
+		res.push('training/' + node.game.settings.TRAINING_IMAGES[i] + 'a.jpg');
+		res.push('training/' + node.game.settings.TRAINING_IMAGES[i] + 'b.jpg');
+	    }
+	    return res;	
+	    checkAndCreateState(msg.from);
             if (gameState[msg.from].randomSetId === null) {
                 gameState[msg.from].randomSetId =
                     J.randomInt(0, randomSets.length) -1;

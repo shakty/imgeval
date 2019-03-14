@@ -16,104 +16,64 @@
     <div id="instructions">
       <h2>Instructions</h2>
       
-      <h3>Task: Scoring Image</h3>
+      <h3>Task: Employment Identification </h3>
       
       <p>
-        On the next pages, you will be asked to score a series of
-        images. 
+        The following figure shows an overview of an assisted facial recognition system that aims to identify if a person entering the building is an employee or not.
       </p>
 
+      <img src="imgscore/authenticationExperimentCropped.jpg"  class="center">
+
       <p>
-        Image scoring is done in <strong>sets</strong>. Each set
-        contains <strong id="nimages">_</strong> images, and you:
         
-        <ul>
-          <li>
-            need to score at
-            least <strong id="sets_lowbound">_</strong> <span id="set_plural">set</span>,
-            so that you can gain experience in making
-            <em>relative comparisons</em>;
-          </li>
-          
-          <li>
-            cannot score more
-            than <strong id="sets_highbound">_</strong> sets, because
-            we want to collect assessments from <em>multiple
-            people</em>.
-          </li>
-        </ul>
+      When a person enters the building, there is a physical barrier in front of which there is a security camera. On the other side, there is a security guard with a screen monitor in front. <strong>In this study, you are playing the role of the security guard</strong>. 
       </p>
 
       <p>
-        Important! You need to <em>fully</em> complete each set that
-        you have started in order to get compensated.
+      The security camera captures an image of the entering person. We will refer to this image as the <em> probe</em>. The <em>Facial Recognition System (FRS)</em> has access to a gallery containing photos of the employees. The FRS compares the probe image with the photos in the gallery. If FRS finds a <em>match</em>,
+      the barrier is automaticaly removed. Otherwise, the FRS shows the photo of the most similiar profile photo in the gallery aside with the probe image on the security guard's screen. The security guard compares the two images, and if he/she decides that they belong to the same person he/she grants access. Otherwise, he/she asks the entering person to provide second factor iauthentication such as ID card. 
       </p>
       
-      <h3>Scientific Research</h3>
+      <p>
+      We refer to <u>Facial Recognition System (FRS)</u> as a technology which is capable of identifying the <em>similarity score </em> between two images. <u>Similarity score</u> is a number between 0 and 1 indicating how similar are two images. Similarity score of 0 indicates that two images are very different and similarity score of 1 indicates that two images are very similar. One of the parameters of an FRS, is the <u>threshold value</u>. The pair of images which have similarity score higher than the threshold value are identified as a <u>match</u>.
 
-      <p>
-        The images you are asked to score have been created by human
-        subjects participating in a <em>scientific experiment</em>. 
       </p>
-      <p>
-        To ensure the integrity of this scientific research, please
-        try to be as accurate as possible in your assessments.
-      </p>
+
+   	  <p>
+   	  You are playing the role of the security guard. We will show you pairs of images along with their similarity score and you should identify if two images have the same identity i.e., the entering person is an employee, or not. Note that a wrong decision could result in granting access to a non-employee and therefore having an unauthorized person in the building. Remember that the image pairs that you see are the ones for which the similarity score is below the FRS's threshold value and therefore the system could not identify a match automatically. Here is an example 
+   	  </p>
+
+   	  <table class="center">
+  		<tr>
+    		<td><img src="imgscore/instructionSample/samplea.jpg"></td>
+   	 		<td><img src="imgscore/instructionSample/sampleb.jpg"></td>
+  		</tr>
+  	</table>
+
+
+	  <ul>
+	  	<li>
+	  		<b> Similarity score : .92 </b>
+	  	</li>
+	  	<li>
+	  		<font color="Indigo"> FRS threshold value to accept as a match: .98 </font>
+	  	</li>
+
+	  </ul>
+
+	  In the next page, we will give you some instructions on how to compare two images to identify whether they belong to the same person.
+
 
     </div>
       
     <div id="instructions2" style="display:none;">
-
-      <h2>Instructions</h2>
-
-      <h3>Scoring Scale</h3>
-  
-      Score each image on a scale
-      from <strong id="grade_lowest">_</strong> (lowest grade)
-      to <strong id="grade_highest">_</strong> (highest grade) on the
-      following dimensions:
-      
-      <ul id="dimensions_list"></ul>
-      
-      <!-- In your evaluation, <strong>do not</strong> consider the color of the lines, but just the shapes and figures they form. -->
-      
-      <h3>How the images have been created</h3>
-      
-      Each image has been created in <em>less than 60 seconds</em>
-      using a special computer interface. This interface is designed
-      to draw images quickly, but with some limitations. <br/><br/>
-      
-      You will see a random sample of the created images on the next
-      page.
-      
+    	<h2> Image Comparison Instruction</h2>
     </div>
     
     <div id="sample" style="display:none;">
-      <h2>Random Sample of Images</h2>
-      <h4>Remember: the images were created by human subjects during a scientific study.</h4>
-
-      <p>
-        Please take as much time as you need to study the images
-        carefully.
-        
-        <p>
-          Important! You are asked to assess <strong>not</strong> the
-          "absolute quality," but rather how they score
-          <strong>relative</strong> to the other images created in the
-          same task. The sample below should give you a sense of the
-          images you will see.
-        </p>
-
-        When you are done, but not before the timer reaches 00:00,
-        click on the "Next" button at the bottom of the
-        page.<br/><br/><br/>
-        
-        <span id="doneTimer"></span>
-      </p>
-      
+      <h2>Practice</h2>
     </div>
     
-    <br/>
     <button class="btn-copy btn-info-copy" id="doneButton">Next</button>
   </div>
 </body>

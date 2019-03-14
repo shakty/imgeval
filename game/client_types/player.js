@@ -19,7 +19,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     // Default Step Rule.
     stager.setDefaultStepRule(stepRules.SOLO);
 
-    // INIT and GAMEOVER.
+    // INIT and GAMEOVER. 
 
     stager.setOnInit(function() {
         var frame;
@@ -62,6 +62,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                     img.className = 'imgSample';
 
                     sampleDiv.appendChild(img);
+                    continue;
 
                     (function(img) {
                         var tooltip;
@@ -83,6 +84,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                         );
                     })(img);
                 }
+		W.adjustFrameHeight();
             });
         };
 
@@ -95,73 +97,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     });
 
     // STAGES and STEPS.
-
-    function instructionsText() {
-        var next, s;
-        console.log('instructions');
-        s = node.game.settings;
-        W.setInnerHTML('nimages', s.NIMAGES);
-        W.setInnerHTML('sets_lowbound', s.SETS_MIN);
-        if (s.SETS_MIN !== 1) W.setInnerHTML('set_plural', 'sets');
-        W.setInnerHTML('sets_highbound', s.SETS_MAX);
-
-        node.game.nextBtn = next = W.getElementById("doneButton");
-        next.onclick = function() {
-            this.disabled = "disabled";
-            node.done();
-        };
-
-        // Require sample images.
-        this.getSample();
-    }
-
-    function instructionsText2() {
-        var s, ul, li;
-        var i, len;
-
-        console.log('instructions2');
-        
-        W.hide('instructions');
-        W.show("instructions2");
-
-        s = node.game.settings.SCORE_OPTIONS;
-        W.setInnerHTML('grade_lowest', s.choices[0]);
-        W.setInnerHTML('grade_highest', s.choices[(s.choices.length-1)]);
-
-        ul = W.getElementById('dimensions_list');
-        i = -1, len = s.items.length;
-        for ( ; ++i < len ; ) {
-            li = document.createElement('li');
-            li.innerHTML = s.items[i];
-            ul.appendChild(li);
-        }
-
-        W.getElementById("doneButton").disabled = false;
-    }
-
-    function sample() {
-        var next, doneTimerSpan;
-
-        console.log('*** sample ! ***');
-
-        W.hide('instructions2');
-        W.show("sample");
-        
-        next = W.getElementById("doneButton");
-        doneTimerSpan = W.getElementById("doneTimer");
-
-        node.game.doneTimer =
-            node.widgets.append('VisualTimer', doneTimerSpan, {
-                milliseconds: 30000,
-                name: 'candonext',
-                listeners: false,
-                timeup: function() {
-                    next.disabled = false;
-                }
-            });
-
-        node.game.doneTimer.start();
-    }
 
     function imgscore() {
         console.log('imgscore');
@@ -391,14 +326,83 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     stager.extendStage('instructions', {
         frame: 'instructions.htm'
     });
+
     stager.extendStep('text', {
-        cb: instructionsText
+        cb: function () {
+            
+            var next, s;
+            console.log('instructions');
+            s = node.game.settings;
+            W.setInnerHTML('nimages', s.NIMAGES);
+            W.setInnerHTML('sets_lowbound', s.SETS_MIN);
+            if (s.SETS_MIN !== 1) W.setInnerHTML('set_plural', 'sets');
+            W.setInnerHTML('sets_highbound', s.SETS_MAX);
+
+            node.game.nextBtn = next = W.getElementById("doneButton");
+            next.onclick = function() {
+                this.disabled = "disabled";
+                node.done();
+            };
+
+            // Require sample images.
+            this.getSample();
+        }
     });
+
     stager.extendStep('text2', {
-        cb: instructionsText2
+        cb:  function() {
+            var s, ul, li;
+            var i, len;
+
+            console.log('instructions2');
+            
+            W.hide('instructions');
+            W.show("instructions2");
+
+            // 
+            //s = node.game.settings.SCORE_OPTIONS;
+            //W.setInnerHTML('grade_lowest', s.choices[0]);
+            //W.setInnerHTML('grade_highest', s.choices[(s.choices.length-1)]);
+
+            //ul = W.getElementById('dimensions_list');
+            //i = -1, len = s.items.length;
+            //for ( ; ++i < len ; ) {
+            //    li = document.createElement('li');
+            //    li.innerHTML = s.items[i];
+            //    ul.appendChild(li);
+            //} -->
+
+            W.getElementById("doneButton").disabled = false;
+
+
+            W.adjustFrameHeight();
+        }
     });
+
     stager.extendStep('sample', {
-        cb: sample
+        cb: function() {
+            var next, doneTimerSpan;
+            
+            console.log('*** sample ! ***');
+
+            W.hide('instructions2');
+            W.show("sample");
+            
+            next = W.getElementById("doneButton");
+            doneTimerSpan = W.getElementById("doneTimer");
+
+            node.game.doneTimer =
+                node.widgets.append('VisualTimer', doneTimerSpan, {
+                    milliseconds: 30000,
+                    name: 'candonext',
+                    listeners: false,
+                    timeup: function() {
+                        next.disabled = false;
+                    }
+                });
+
+            node.game.doneTimer.start();
+        }
     });
 
     // Scoring.

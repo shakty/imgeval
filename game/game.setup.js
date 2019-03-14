@@ -18,7 +18,7 @@ module.exports = function(settings, stages, gameDir, level) {
     // This settings will be made available to all client types.
     // It is up to them to use them.
 
-    setup.debug = false;
+    setup.debug = true;
     setup.verbosity = 0;
     setup.window = { 
         promptOnleave: !setup.debug,

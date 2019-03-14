@@ -11,9 +11,6 @@ var ratingScale = [ 1, 2, 3, 4, 5, 6, 7 ];
 
 module.exports = {
 
-    // Session Counter start from (not used).
-    SESSION_ID: 100,
-
     // Number of sets of pictures to rate per player.
     SETS_MIN: 1,
 
@@ -25,6 +22,14 @@ module.exports = {
 
     // Number of images per set.
     SKIPSETS: true,
+
+    TRAINING_IMAGES: [
+        '1', '2', '3', '4', '5'	
+    ],
+
+    TEST_IMAGES: [
+        '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'
+    ],
 
     // Options to pass to the ChoiceTableGroup widget
     // for creating the scoring interface.
