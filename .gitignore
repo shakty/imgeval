@@ -15,3 +15,5 @@ data
 descil.conf.js
 *.csv
 *.bak
+
+public/imgscore
