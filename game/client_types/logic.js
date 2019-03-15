@@ -116,8 +116,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         }, dumpDbInterval);
         ///////////////////
 
-        this.sampleStage = this.plot.normalizeGameStage('instructions.sample');
-
         // This must be done manually for now (maybe change).
         node.on.mreconnect(function(p) {
             node.game.ml.add(p);
@@ -209,21 +207,20 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         });
 
         // Client is requesting a random sample.
+        // Samira: get.sample is defined in player. We will use it in test
         node.on('get.sample', function(msg) {
             console.log('**** Get SAMPLE! ' + msg.from + ' ***');
-            var res = [], pair;    
-	    for (var i = 0; i < node.game.settings.TRAINING_IMAGES.length; i++) {
-		res.push('training/' + node.game.settings.TRAINING_IMAGES[i] + 'a.jpg');
-		res.push('training/' + node.game.settings.TRAINING_IMAGES[i] + 'b.jpg');
-	    }
-	    return res;	
-	    checkAndCreateState(msg.from);
-            if (gameState[msg.from].randomSetId === null) {
-                gameState[msg.from].randomSetId =
-                    J.randomInt(0, randomSets.length) -1;
+            var res = [];  
+	        for (var i = 0; i < node.game.settings.TRAINING_IMAGES.length; i++) {
+		      res.push({
+                a: 'training/' + node.game.settings.TRAINING_IMAGES[i] + 'a.jpg',
+		        b: 'training/' + node.game.settings.TRAINING_IMAGES[i] + 'b.jpg'
+	          });
             }
-            return randomSets[gameState[msg.from].randomSetId].items;
+	        return res;
         });
+
+
 
         // Client has categorized an image.
         node.on.data('score',function(msg) {

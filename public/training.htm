@@ -1,0 +1,71 @@
+<!doctype html>
+
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+
+<!-- JQUERY UI STARTS
+     <link type="text/css" href="js/jqueryui/css/ui-lightness/jquery-ui-1.8.20.custom.css" rel="Stylesheet" />
+     <script src="js/jqueryui/js/jquery-1.7.2.min.js" charset="utf-8"></script>
+     <script src="js/jqueryui/js/jquery-ui-1.8.20.custom.min.js" charset="utf-8"></script>
+JQUERY UI ENDS -->
+
+<!-- Loading  nodeGame libraries and CSS -->
+<!-- CSS needs to be reloaded in each iframe -->
+<link rel='stylesheet' href='/stylesheets/nodegame.css'></link>
+<link rel='stylesheet' href='css/main.css'></link>
+<!-- end -->
+
+<body>
+<div id="training">
+  <table id="image_table" class="scoretable">
+  <tr>
+    <td id="td_image"><img class="image" id="image" src="/images/loading.gif" /></td>
+  </tr>
+
+  <tr id="tr_score">
+    <td id="td_score"></td>
+  </tr>
+
+  <tr>
+    <td>
+      <button class="btn btn-info" id="doneButton">Next</button>
+    </td>
+  </tr>
+  </table>
+
+  <table id="continue" style="display:none" class="scoretable" >
+    <tr>
+      <td>
+        <br>
+        <h3><strong>Well Done!</strong></h3>
+        <p>
+          You have successfully completed a set of images. Remaining
+          sets still available: <strong id="remaining">_</strong>.
+        </p>
+        <p>
+          You can terminate your task here, or you can score another set
+          of images for an extra bonus. Important! If you decide to
+          start a new set, you will be compensated <em>only if</em> you
+          finish the new set.
+        </p>
+        <p>
+          Would you like to start a new set of images?<br/>
+        <button class="btn btn-success yesno" id="yes">Yes</button>
+        <button class="btn btn-danger yesno" id="no">No</button>
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <table id="end" style="display:none" class="scoretable" >
+    <tr>
+      <td>
+        <br>
+        <strong>Well Done!</strong><br/>  You have successfully
+        completed <em>all</em> set of images. Click "Next" to conclude
+        the task.<br/><br/>
+      <button class="btn btn-info" id="endButton">Next</button>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>

@@ -23,42 +23,26 @@ module.exports = {
     // Number of images per set.
     SKIPSETS: true,
 
+    // Number of training subjects
     TRAINING_IMAGES: [
         '1', '2', '3', '4', '5'	
     ],
 
+    // Number of test subjects
     TEST_IMAGES: [
         '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'
     ],
+
+    // SIMILARITY_SCORE: 
 
     // Options to pass to the ChoiceTableGroup widget
     // for creating the scoring interface.
     SCORE_OPTIONS: {
 
-        mainText: '<h4><strong>Score the image above on a scale from ' +
-            ratingScale[0] + ' (lowest) to ' +
-            ratingScale[(ratingScale.length-1)] + 
-            ' (highest).</strong></h4>' +
-            'Try to consider the value of this image ' +
-            '<strong>relative</strong> to the others you have ' +
-            'observed so far.<br/>',
+        notMatch: '<h4> The FRS system could not identify the following two images as a match.</h4>',
 
-        items: [
-            'Overall Appeal or Quality',
-            'Creativity',
-            'Goodness as a Face',
-            'Abstractness'
-        ],
+        match: '<h4> The FRS system identified the following two images as a match.</h4>' 
 
-        choices: ratingScale,
-
-        shuffleItems: true, 
-
-        requiredChoice: true,
-
-        left: 'Lowest',
-
-        right: 'Highest',
     },
 
     // Serve sets of images sequentally from set X (it is zero-indexed).

@@ -40,52 +40,39 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         // If TRUE, the loop at imgscore is broken.
         this.enoughSets = false;
 
+        this.displayPair = function(j) {
+            var sampleDiv, imgPair, img, img2;
+            
+            imgPair = this.sample[j];
+            img = document.createElement('img');
+            img.src = node.game.settings.IMG_DIR + imgPair.a;
+            img.className = 'imgSample';
+
+            img2 = document.createElement('img');
+            img2.src = node.game.settings.IMG_DIR + imgPair.b;
+            img2.className = 'imgSample';
+
+            sampleDiv = W.getElementById('training');
+            sampleDiv.appendChild(img);
+            sampleDiv.appendChild(img2);
+
+            W.adjustFrameHeight();
+            // sampleDiv.appendChild(document.createElement('br'));
+            // sampleDiv.appendChild(document.createElement('br'));
+        };
+
+        // Samira: Can I pass variable like this?
         this.getSample = function() {
             console.log('inside getSample')
-            var that, sampleDiv;
+            var that;
+            //var next;
+            //Samira: what's the point of this?
             that = this;
-            sampleDiv = W.getElementById('sample');
+            // next = W.getElementById("doneButton");
             // Preloading the sample
+            // Samira: This means that we call function get.sample from logic and put the output in sample?
             node.get('sample', function(sample) {
-                var i, len;
-                var imgPath, img;
-                var $;
-
-                // jQuery.
-                $ = W.getFrameWindow().$;
-
                 that.sample = sample;
-                i = -1, len = sample.length;
-                for (; ++i < len;) {
-                    imgPath = sample[i];
-                    img = document.createElement('img');
-                    img.src = node.game.settings.IMG_DIR + imgPath;
-                    img.className = 'imgSample';
-
-                    sampleDiv.appendChild(img);
-                    continue;
-
-                    (function(img) {
-                        var tooltip;
-                        tooltip = $('<img src="' + img.src + '" />"');
-
-                        $(img).hover(
-                            function(e) {
-                                tooltip.addClass('tooltip');
-                                tooltip.css({
-                                    "left": (5 + e.pageX) + "px",
-                                    "top": -200 + e.pageY + "px"
-                                });
-                                $(this).before(tooltip);
-
-                            },
-                            function() {
-                                $(tooltip).remove();
-                            }
-                        );
-                    })(img);
-                }
-		W.adjustFrameHeight();
             });
         };
 
@@ -99,34 +86,27 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
     // STAGES and STEPS.
 
-    function imgscore() {
-        console.log('imgscore');
+    //Samira
+    function imgIdentify() {
+        console.log('imgIdentify');
 
         var next, mainImg;
         var ctgOptions, ctgRoot;
         var i, len, items;
 
+        this.displayPair(node.game.getRound());
+
         if (!node.game.score) {
 
             ctgRoot = W.getElementById('td_score');
             ctgOptions = node.game.settings.SCORE_OPTIONS;
-            if (!ctgOptions.id) ctgOptions.id = 'score';
+            if (!ctgOptions.id) ctgOptions.id = 'identify';
             if (!ctgOptions.title) ctgOptions.title = false;
 
-            i = -1, len = ctgOptions.items.length;
-            items = new Array(len);
-            for ( ; ++i < len ; ) {
-                items[i] = {
-                    id: ctgOptions.items[i],
-                    choices: ctgOptions.choices,
-                    left: '<span class="dimension">' + 
-                        ctgOptions.items[i] + ':</span> '
-                };
-            }
-            ctgOptions.items = items;
            
-            node.game.score = node.widgets.append('ChoiceTableGroup', ctgRoot,
-                                                  ctgOptions);
+            // Samira: what is node.game.score?
+            // node.game.score = node.widgets.append('ChoiceTableGroup', ctgRoot,
+            //                                     ctgOptions);
         }
 
         W.show('image_table');
@@ -256,6 +236,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     }
 
     function thankyou() {
+        console.log('inside thank you')
         var b, i, errStr, counter;
         console.log('thank you.');
 
@@ -346,7 +327,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             };
 
             // Require sample images.
-            //this.getSample();
+            this.getSample(0);
         }
     });
 
@@ -415,30 +396,11 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
     //training
 
-    stager.extendStage('training', {
-        frame: 'scorepage.htm'
+    stager.extendStep('training', {
+        frame: 'training.htm',
+        cb: imgIdentify
     });
 
-    stager.extendStep('identify', {
-        cb: imgscore
-    });
-
-    stager.extendStep('continue', {
-        cb: continueCb
-    });
-
-
-
-    // test
-    stager.extendStage('test', {
-        frame: 'scorepage.htm'
-    });
-    stager.extendStep('identify', {
-        cb: imgscore
-    });
-    stager.extendStep('continue', {
-        cb: continueCb
-    });
 
     // Thank you.
     stager.extendStep('thankyou', {

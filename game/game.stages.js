@@ -16,25 +16,12 @@ module.exports = function(stager, settings) {
 
     stager
         .next('instructions')
-        .loop('training', function(){
-            return !this.enoughSets
-        })
-        .loop('test', function() {
-            return !this.enoughSets;
-        })
+        .repeat('training', 5)
         .next('thankyou')
         .gameover();
 
     stager.extendStage('instructions', {
         steps: [ 'employmentIdentification', 'FRS', 'faceComparison' ]
-    });
-
-    stager.extendStage('training', {
-        steps: [ 'identify', 'continue' ]
-    });
-
-    stager.extendStage('test', {
-        steps: [ 'identify2', 'continue2' ]
     });
 
 
