@@ -12,6 +12,7 @@ var Stager = ngc.Stager;
 var stepRules = ngc.stepRules;
 var constants = ngc.constants;
 
+
 // Export the game-creating function. It needs the name of the treatment and
 // its options.
 module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
@@ -28,53 +29,141 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         frame = W.generateFrame();
 
         // How many images scored in this set.
+        // Samira: change this?
         this.counter = -1;
 
         // Contains data about the images to display, and sets completed.
         this.images = {};
 
-        // Automatically stops from asking the next set of images to rate
-        // (the server would not send them anyway).
-        this.nSetsLimit = this.settings.SETS_MAX -1;
-
         // If TRUE, the loop at imgscore is broken.
         this.enoughSets = false;
 
         this.displayPair = function(j) {
-            var sampleDiv, imgPair, img, img2;
             
-            imgPair = this.sample[j];
+            console.log("inside displayPair")
+
+            var root, imgPair, img, img2, currentSimScore, currentThreshold;
+            
+            imgPair = this.sample[j-1];
+            currentSimScore = this.simScore[j-1];
+            currentThreshold = this.threshold[j-1];
+
             img = document.createElement('img');
             img.src = node.game.settings.IMG_DIR + imgPair.a;
             img.className = 'imgSample';
+            // img.width = "300"
+            // img.height = "400"
 
             img2 = document.createElement('img');
             img2.src = node.game.settings.IMG_DIR + imgPair.b;
             img2.className = 'imgSample';
+            //img2.width = "300"
+            //img2.height = "400"
 
-            sampleDiv = W.getElementById('training');
-            sampleDiv.appendChild(img);
-            sampleDiv.appendChild(img2);
+            root = W.getElementById('td_image_a');
+            root.appendChild(img);
+            
+            root = W.getElementById('td_image_b');
+            root.appendChild(img2);
 
+            W.setInnerHTML('similarityScore', "Similarity score: " + currentSimScore);
+            W.setInnerHTML('thresholdTraining', "FRS threshold value to accept as a match: " + currentThreshold);
+            
+            
             W.adjustFrameHeight();
-            // sampleDiv.appendChild(document.createElement('br'));
-            // sampleDiv.appendChild(document.createElement('br'));
+
+
+            
+        };
+
+        this.displayRandomPair = function(j) {
+            
+            console.log("inside displayRandomPair")
+
+            var root, imgPair, img, img2, currentSimScore, currentThreshold;
+            
+            // define testSample
+            imgPair = this.testSample[j-1];
+            console.log("imgPair: ", imgPair);
+
+            currentSimScore = this.simScore[j-1];
+            currentThreshold = node.game.settings.THRESHOLD_TEST;
+
+            img = document.createElement('img');
+            img.src = node.game.settings.IMG_DIR + imgPair.a;
+            img.className = 'imgSample';
+            // img.width = "300"
+            // img.height = "400"
+
+            img2 = document.createElement('img');
+            img2.src = node.game.settings.IMG_DIR + imgPair.b;
+            img2.className = 'imgSample';
+            //img2.width = "300"
+            //img2.height = "400"
+
+            root = W.getElementById('td_image_a');
+            root.appendChild(img);
+            
+            root = W.getElementById('td_image_b');
+            root.appendChild(img2);
+
+            W.setInnerHTML('similarityScoreTest', "Similarity score: " + currentSimScore);
+            W.setInnerHTML('thresholdTest', "FRS threshold value to accept as a match: " + currentThreshold);
+            
+            
+            W.adjustFrameHeight();
+
+
+            
         };
 
         // Samira: Can I pass variable like this?
         this.getSample = function() {
             console.log('inside getSample')
             var that;
-            //var next;
-            //Samira: what's the point of this?
             that = this;
-            // next = W.getElementById("doneButton");
-            // Preloading the sample
-            // Samira: This means that we call function get.sample from logic and put the output in sample?
-            node.get('sample', function(sample) {
-                that.sample = sample;
+            // Call the server and tell him 'sample', and then reply is the output of the function. 
+            node.get('sample', function(reply) {
+                that.sample = reply;
             });
         };
+
+        this.getRandomSample =  function(){
+            console.log('inside getRandomSample')
+            var that;
+            that = this;
+            node.get('randomSample', function(reply) {
+                [that.testSample, that.simScore] = reply;
+            });
+
+           //  "SERVER",
+
+            // if you wanna pass a parameter
+
+            //{
+            //    data: "test"
+            //});
+        };
+
+        this.getSimilarityScore = function() {
+            console.log('inside getSimilarityScore')
+            var that;
+            that = this;
+            // Call the server and tell him 'similarityScore', and then reply is the output of the function. 
+            node.get('similarityScore', function(reply) {
+                that.simScore = reply;
+            });
+        };
+
+        this.getThreshold = function(){
+            console.log('inside getThreshold')
+            var that;
+            that = this;
+            // Call the server and tell him 'threshold', and then reply is the output of the function. 
+            node.get('threshold', function(reply) {
+                that.threshold = reply;
+            });
+        }
 
         node.on('SOCKET_DISCONNECT', function() {
             W.clearPage();
@@ -87,153 +176,72 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     // STAGES and STEPS.
 
     //Samira
-    function imgIdentify() {
-        console.log('imgIdentify');
 
-        var next, mainImg;
-        var ctgOptions, ctgRoot;
-        var i, len, items;
+    function imgIdentify() {
+        console.log('inside imgIdentify');
 
         this.displayPair(node.game.getRound());
 
-        if (!node.game.score) {
+        // W.getElementById("similarityScore").innerHTML = "hello";
+        W.getElementById('samePerson').onclick = function(){
 
-            ctgRoot = W.getElementById('td_score');
-            ctgOptions = node.game.settings.SCORE_OPTIONS;
-            if (!ctgOptions.id) ctgOptions.id = 'identify';
-            if (!ctgOptions.title) ctgOptions.title = false;
+            console.log('clicked same person')
+            node.done({
+                decision: 'same',
+                image: node.game.sample[node.game.getRound().a]
+            });
 
-           
-            // Samira: what is node.game.score?
-            // node.game.score = node.widgets.append('ChoiceTableGroup', ctgRoot,
-            //                                     ctgOptions);
         }
 
-        W.show('image_table');
-        W.hide('continue');
+        W.getElementById('notSamePerson').onclick = function(){
+            console.log('inja');
 
-        function displayImage() {
-            var imgPath;
-            imgPath = node.game.images.items[++node.game.counter];
-            mainImg.src = node.game.settings.IMG_DIR + imgPath;
-            next.disabled = false;
-            node.timer.setTimestamp('newpic_displayed');
+            console.log('clicked not the same person')
+            node.done({
+                decision: 'notsame',
+                image: node.game.sample[node.game.getRound().a]
+            });
+            console.log("unja")
         }
-
-        function onNextImages(images) {
-            var len;
-            if (images.noMore) {
-                alert('Unfortunately, all remaning sets have been taken. ' +
-                     'You will now be moved to the final stage.');
-                node.game.enoughSets = true;                
-                node.say('enoughSets');
-                return;
-            }
-            node.game.counter = -1;
-            node.game.images = images;
-            len = images.items.length;
-            // A reconnection.
-            if (len !== node.game.settings.NIMAGES) {
-                node.game.images.offset = node.game.settings.NIMAGES - len;
-                updateNextButton();
-            }
-            displayImage();
-        }
-
-        function askForNext() {
-            var images, obj, counter;
-            var img, time2score;
-
-            time2score = node.timer.getTimeSince('newpic_displayed');
-            next.disabled = true;
-            counter = node.game.counter;
-            images = node.game.images;
-
-            if (counter !== -1 && counter < images.items.length) {
-                obj = node.game.score.getValues({ 
-                    reset: { shuffleItems: true }
-                });
-                if (obj.missValues) {
-                    next.disabled = false;
-                    return;
-                }
-                updateNextButton(counter+1);
-
-                // Path to the image, used as id.
-                img = images.items[counter];
-                obj.id = img;
-
-                node.say('score', 'SERVER', obj);
-            }
-
-            // Ask the server for the next set of images.
-            if (!images.items) {
-                node.get('NEXT', onNextImages);
-            }
-            else if (counter >= (images.items.length -1)) {
-                W.hide('image_table');
-                node.done();                
-            }
-            else {
-                displayImage();
-            }
-        }
-
-        function updateNextButton(counter) {
-            var offset;
-            counter = counter || 0;
-            offset = node.game.images.offset || 0;
-            next.innerHTML = 'Next (' + (offset + counter) + '/' +
-                node.game.settings.NIMAGES + ')';
-        }
-
-        // Elements of the page.
-
-        // Next button.
-        node.game.nextBtn = next = W.getElementById("doneButton");
-
-        // Img.
-        mainImg = W.getElementById('image');
-
-
-        // Click!
-        next.disabled = false;
-        next.innerHTML = 'Next';
-        next.onclick = askForNext;
-        next.click();
+        return;
     }
 
-    function continueCb() {
-        var remainingSets;
-        W.hide('image_table');
-        remainingSets = this.settings.SETS_MAX - (this.images.completedSets+1);
-        W.setInnerHTML('remaining', remainingSets);
-        // All sets scored.
-        if (this.images.completedSets >= this.nSetsLimit) {
-            W.show('end');
-            W.getElementById('endButton').onclick = function() {
-                // Triggers to go to next stage.
-                node.get('NEXT', function() {});
-            };
+    function transitionFun(){
+        console.log('inside transitionFun');
+        var next = W.getElementById('nextButton');
+        next.onclick = function(){
+            console.log('Hier')
+            node.done('starting test');
         }
-        // Display option to continue.
-        else {
-            W.show('continue');
-            // Hide old image.
-            W.getElementById('image').src = '/images/loading.gif';
-            // Set listeners.
-            W.getElementById('yes').onclick = function() {
-                // Need to update both.
-                node.game.counter = -1;
-                node.game.images = {};
-                node.done();
-            };
-            W.getElementById('no').onclick = function() {
-                node.game.enoughSets = true;                
-                node.say('enoughSets');
-            };
-        }
+        
     }
+
+    function imgIdentifyTest(){
+        console.log('inside imgIdentifyTest');
+
+        this.displayRandomPair(node.game.getRound());
+
+        W.getElementById('samePersonTest').onclick = function(){
+
+            console.log("clicked same person")
+            node.done({
+                decision: 'same',
+                image: node.game.testSample[node.game.getRound()-1].a
+            });
+        }
+
+        W.getElementById('notSamePersonTest').onclick = function(){
+
+            console.log('clicked not the same person')
+            node.done({
+                decision: 'notsame',
+                image: node.game.testSample[node.game.getRound()-1].a
+            });
+        }
+        return;
+    }
+
+
 
     function thankyou() {
         console.log('inside thank you')
@@ -245,7 +253,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             var exitCodeInput, winInput;
             // var winUsd;
 
-            // Exit Code.
+            // Exit Code. 
             codeErr = 'ERROR (code not found)';
             exitcode = msg.data && msg.data.exitcode || codeErr;
             exitCodeInput = W.getElementById('exitCode');
@@ -313,12 +321,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         cb: function () {
             
             var next
-            var s;
-            // s = node.game.settings;
-            // W.setInnerHTML('nimages', s.NIMAGES);
-            // W.setInnerHTML('sets_lowbound', s.SETS_MIN);
-            //if (s.SETS_MIN !== 1) W.setInnerHTML('set_plural', 'sets');
-            //W.setInnerHTML('sets_highbound', s.SETS_MAX);
 
             node.game.nextBtn = next = W.getElementById("doneButton");
             next.onclick = function() {
@@ -326,32 +328,21 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                 node.done();
             };
 
-            // Require sample images.
-            this.getSample(0);
+            // Require sample images. Calling them here already so that we load the images
+            // beforehand
+
+            this.getSample();
+            this.getSimilarityScore();
+            this.getThreshold();
+            this.getRandomSample();
         }
     });
 
     stager.extendStep('FRS', {
        cb: function() {
-        //    var s, ul, li;
-        //    var i, len;
 
             W.hide("employmentIdentificationPage");
             W.show("FRSPage");
-
-            // 
-            //s = node.game.settings.SCORE_OPTIONS;
-            //W.setInnerHTML('grade_lowest', s.choices[0]);
-            //W.setInnerHTML('grade_highest', s.choices[(s.choices.length-1)]);
-
-            //ul = W.getElementById('dimensions_list');
-            //i = -1, len = s.items.length;
-            //for ( ; ++i < len ; ) {
-            //    li = document.createElement('li');
-            //    li.innerHTML = s.items[i];
-            //    ul.appendChild(li);
-            //} -->
-
             W.getElementById("doneButton").disabled = false;
 
 
@@ -368,28 +359,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         var next = W.getElementById("doneButton");
         next.disabled = false;
 
-        // cb: function() {
-        //     var next, doneTimerSpan;
-            
-        //     console.log('faceComparison');
-
-        //     W.hide('FRS');
-        //     W.show("faceComparison");
-            
-        //     next = W.getElementById("doneButton");
-        //     doneTimerSpan = W.getElementById("doneTimer");
-
-        //     node.game.doneTimer =
-        //         node.widgets.append('VisualTimer', doneTimerSpan, {
-        //             milliseconds: 30000,
-        //             name: 'candonext',
-        //             listeners: false,
-        //             timeup: function() {
-        //                 next.disabled = false;
-        //             }
-        //         });
-
-        //     node.game.doneTimer.start();
         }
     });
 
@@ -401,11 +370,36 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         cb: imgIdentify
     });
 
+    stager.extendStep('transition',{
+        frame: 'transition.htm',
+        cb: transitionFun
+    });
+
+    stager.extendStep('test',{
+        frame: 'test.htm',
+        cb: imgIdentifyTest
+    });
 
     // Thank you.
     stager.extendStep('thankyou', {
-        cb: thankyou,
-        frame: 'thankyou.htm'
+        widget: {
+            name: 'EndScreen',
+            options: {
+                className: 'centered',
+                panel: false,
+                title: false,
+                email: {
+                    text: 'If you would like to participate in' +
+                          'future studies, please put your ' +
+                          'email (optional):'
+                }
+            }
+        },
+        cb: function() {
+            // Not needed in nodeGame v5.
+            node.say('WIN');
+        },
+        //frame: 'thankyou.htm',
     });
 
 };

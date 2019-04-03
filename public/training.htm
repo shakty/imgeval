@@ -15,57 +15,35 @@ JQUERY UI ENDS -->
 <!-- end -->
 
 <body>
-<div id="training">
-  <table id="image_table" class="scoretable">
-  <tr>
-    <td id="td_image"><img class="image" id="image" src="/images/loading.gif" /></td>
-  </tr>
-
-  <tr id="tr_score">
-    <td id="td_score"></td>
-  </tr>
-
-  <tr>
-    <td>
-      <button class="btn btn-info" id="doneButton">Next</button>
-    </td>
-  </tr>
-  </table>
-
-  <table id="continue" style="display:none" class="scoretable" >
+<div id="root">
+  <div id="training">
+    <table id="image_table" class="center">
     <tr>
-      <td>
-        <br>
-        <h3><strong>Well Done!</strong></h3>
-        <p>
-          You have successfully completed a set of images. Remaining
-          sets still available: <strong id="remaining">_</strong>.
-        </p>
-        <p>
-          You can terminate your task here, or you can score another set
-          of images for an extra bonus. Important! If you decide to
-          start a new set, you will be compensated <em>only if</em> you
-          finish the new set.
-        </p>
-        <p>
-          Would you like to start a new set of images?<br/>
-        <button class="btn btn-success yesno" id="yes">Yes</button>
-        <button class="btn btn-danger yesno" id="no">No</button>
-        </p>
-      </td>
+      <td id="td_image_a"></td>
+      <td id="td_image_b"></td>
+      <td> </td>
     </tr>
-  </table>
+    </table>
 
-  <table id="end" style="display:none" class="scoretable" >
-    <tr>
-      <td>
-        <br>
-        <strong>Well Done!</strong><br/>  You have successfully
-        completed <em>all</em> set of images. Click "Next" to conclude
-        the task.<br/><br/>
-      <button class="btn btn-info" id="endButton">Next</button>
-      </td>
-    </tr>
-  </table>
+    <ul style="text-align: left;
+    display: inherit;
+    margin-left: 74px;">
+      <li style="display: inline-block;">
+        <b> <div id="similarityScore" style="align-content: center;"> </div> </b>
+      </li>
+      <p></p>
+      <li style="display: inline-block;">
+        <div id="thresholdTraining" style="align-content: center;"></div>
+      </li>
+
+    </ul>
+  
+
+    <div id="buttons" class="center">
+      <button class="btn btn-info" id="samePerson" style="margin-bottom: 10px; margin-top: 40px;">Same Person</button>
+      <button class="btn btn-info" id="notSamePerson">Not the Same Person: Ask for ID card
+      </button>
+    </div>
+  </div>
 </div>
 </body>

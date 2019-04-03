@@ -36,7 +36,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     imgDb = setup.imgDb;
 
     // Write bonus file headers.
-    appendToBonusFile();
+    // appendToBonusFile();
 
     // 2. Sets variables.
 
@@ -221,6 +221,82 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         });
 
 
+        node.on('get.similarityScore', function(msg){
+            console.log('**** Get similarityScore of training! ' + msg.from + ' ***');
+            var res = [];  
+            for (var i = 0; i < node.game.settings.TRAINING_IMAGES.length; i++) {
+              res.push(
+                node.game.settings.SIMILARITY_SCORE_TRAIN[i],
+              );
+            }
+            return res;
+        });
+
+        node.on('get.threshold', function(msg){
+            console.log('**** Get threshold of training! ' + msg.from + ' ***');
+            var res = [];  
+            for (var i = 0; i < node.game.settings.TRAINING_IMAGES.length; i++) {
+              res.push(
+                node.game.settings.THRESHOLD_TRAIN[i],
+              );
+            }
+            return res;
+        });
+
+        node.on('get.randomSample', function(msg){
+            console.log('**** Get randomSample! ' + msg.from + ' ***');
+            var randImageSamples = [];
+            var randSimilarityScores = [];
+            var array = [];
+            var testLength = node.game.settings.TEST_IMAGES.length;
+            
+            //if (msg.data === "test") {
+
+            //}
+
+            for (var i = 0; i < testLength; i++) {
+              array.push(i);
+            }
+
+            var shuffle = function (arr) {
+
+                console.log("inside shuffledArray")
+
+                var currentIndex = arr.length;
+                var temporaryValue, randomIndex;
+
+                 // While there remain elements to shuffle...
+                while (0 !== currentIndex) {
+                // Pick a remaining element...
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex -= 1;
+
+                    // And swap it with the current element.
+                    temporaryValue = arr[currentIndex];
+                    array[currentIndex] = arr[randomIndex];
+                    array[randomIndex] = temporaryValue;
+                }
+                return arr;
+            };
+
+            // You could use J.shuffle.
+            var shuffledArray = shuffle(array);
+
+            for (var i = 0; i < testLength; i++ ){
+                randImageSamples.push({
+                a: 'test/' + node.game.settings.TEST_IMAGES[shuffledArray[i]] + 'a.jpg',
+                b: 'test/' + node.game.settings.TEST_IMAGES[shuffledArray[i]] + 'b.jpg'
+              });
+            }
+
+            for (var i = 0; i < testLength; i++){
+                randSimilarityScores.push(node.game.settings.SIMILARITY_SCORE_TEST[shuffledArray[i]]);
+            }
+
+            return [randImageSamples, randSimilarityScores]
+
+        });
+
 
         // Client has categorized an image.
         node.on.data('score',function(msg) {
@@ -267,12 +343,27 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
             code = channel.registry.getClient(id);
             if (!code) {
-                console.log('ERROR: no codewen in endgame:', id);
+                console.log('ERROR: no code for email in endgame:', id);
                 return;
             }
 
             // Write email.
-            appendToEmailFile(msg.data, code);
+            appendToFile('email', msg.data, code);
+        });
+
+          // Save Email.
+        node.on.data('feedback', function(msg) {
+            var id, code;
+            id = msg.from;
+
+            code = channel.registry.getClient(id);
+            if (!code) {
+                console.log('ERROR: no code for feedback:', id);
+                return;
+            }
+
+            // Write email.
+            appendToFile('feedback', msg.data, code);
         });
     }
 
@@ -325,10 +416,21 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         // Send Win code;
         node.say('WIN', pId, {
-            win: state.finalBonus,
+            win: settings.FEE,
             exitcode: code.ExitCode
         });
     }
+
+    node.on.data('WIN', function(msg) {
+        var clientObj, pId;
+        pId = msg.from;
+        clientObj = channel.registry.getClient(pId);  
+        // Send Win code;
+        node.say('WIN', pId, {
+            total: settings.FEE,
+            exitcode: clientObj.ExitCode
+        });
+    });
 
     /**
      * ### checkAndCreateState
@@ -387,12 +489,12 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
      * @param {string} email The email
      * @param {object} code The client object from the registry
      */
-    function appendToEmailFile(email, code) {
+    function appendToFile(file, email, code) {
         var row;
         row  = '"' + (code.id || code.AccessCode || 'NA') + '", "' +
             (code.workerId || 'NA') + '", "' + email + '"\n';
 
-        fs.appendFile(gameRoom.dataDir + 'email.csv', row, function(err) {
+        fs.appendFile(gameRoom.dataDir + file + '.csv', row, function(err) {
             if (err) {
                 console.log(err);
                 console.log(row);

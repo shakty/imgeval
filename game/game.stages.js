@@ -17,6 +17,8 @@ module.exports = function(stager, settings) {
     stager
         .next('instructions')
         .repeat('training', 5)
+        .next('transition')
+        .repeat('test', 10)
         .next('thankyou')
         .gameover();
 
@@ -24,8 +26,8 @@ module.exports = function(stager, settings) {
         steps: [ 'employmentIdentification', 'FRS', 'faceComparison' ]
     });
 
-
     // stager.skip('instructions');
-
-    // return stager.getState();
+    stager.skip('training');
+    // stager.skip('test');
+    stager.skip('transition');
 };

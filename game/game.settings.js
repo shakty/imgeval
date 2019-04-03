@@ -7,43 +7,30 @@
  * ---
  */
 
-var ratingScale = [ 1, 2, 3, 4, 5, 6, 7 ];
 
 module.exports = {
-
-    // Number of sets of pictures to rate per player.
-    SETS_MIN: 1,
-
-    // Number of sets of pictures to rate per player.
-    SETS_MAX: 5,
-
-    // Number of images per set.
-    NIMAGES: 8,
-
-    // Number of images per set.
-    SKIPSETS: true,
 
     // Number of training subjects
     TRAINING_IMAGES: [
         '1', '2', '3', '4', '5'	
     ],
 
+
     // Number of test subjects
     TEST_IMAGES: [
         '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'
     ],
 
-    // SIMILARITY_SCORE: 
+    SIMILARITY_SCORE_TRAIN: ['91', '87', '90', '67', '78'
+    ],
 
-    // Options to pass to the ChoiceTableGroup widget
-    // for creating the scoring interface.
-    SCORE_OPTIONS: {
+    SIMILARITY_SCORE_TEST:['93', '80', '70', '60', '40', '67', '71', '69', '86', '45'
+    ],
 
-        notMatch: '<h4> The FRS system could not identify the following two images as a match.</h4>',
+    THRESHOLD_TRAIN: ['40', '50', '60', '70', '80'
+    ],
 
-        match: '<h4> The FRS system identified the following two images as a match.</h4>' 
-
-    },
+    THRESHOLD_TEST: '90',
 
     // Serve sets of images sequentally from set X (it is zero-indexed).
     SET_COUNTER: -1,
@@ -55,7 +42,7 @@ module.exports = {
     // Payment settings.
 
     // Fixed amount of money.
-    FEE: 0.4,
+    FEE: 1,
 
     // Bonus for every completed set.
     BONUS: 0.4,
