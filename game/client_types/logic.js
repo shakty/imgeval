@@ -365,6 +365,15 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             // Write email.
             appendToFile('feedback', msg.data, code);
         });
+
+        node.on.data('quizResults', function(msg) {
+            if (msg.data === false) {
+                // TODO: Mark exclusion.
+                // Maybe the order of parameter is the opposite.
+                node.redirect('page_excluded.htm', msg.from);
+            }
+        });
+
     }
 
     stager.setDefaultProperty('reconnect', function(p, opts) {
@@ -378,13 +387,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
     // ## Helper functions.
 
-    /**
-     * ### goodbye
-     *
-     * Advances a player to the next stage (the final) and sends the bonus
-     *
-     * @param {string} pId The id of the player
-     */
+    // Not used.
     function goodbye(pId) {
         var bonusStr, bonus, bonusAndFee, code, state;
 
@@ -431,6 +434,8 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             exitcode: clientObj.ExitCode
         });
     });
+
+
 
     /**
      * ### checkAndCreateState

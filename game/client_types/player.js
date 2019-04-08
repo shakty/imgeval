@@ -241,6 +241,21 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         return;
     }
 
+    function consentCB(){
+        console.log("inside consentCB");
+
+        W.getElementById('agree').onclick = function(){
+            console.log("agreed to the consent form")
+            node.done('agreed')
+        }
+
+        W.getElementById('notAgree').onclick = function(){
+            console.log('not agreed to consent form')
+            alert('Please exit the HIT')
+        }
+        return;
+    }
+
 
 
     function thankyou() {
@@ -311,11 +326,27 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     }
 
     // Creating stages and steps.
+    //consent
+
+    stager.extendStep('consent', {
+        frame: 'consent.htm',
+        cb: consentCB
+    });
 
     // Instructions.
     stager.extendStage('instructions', {
         frame: 'instructions.htm'
     });
+
+    stager.extendStep('quiz', {
+        // widget: {},
+        done: function(values) {
+            if (!values.isCorrect) {
+                node.say('quizResults', 'SERVER', false);
+                return;
+            }
+        }
+    })
                        
     stager.extendStep('employmentIdentification', {
         cb: function () {

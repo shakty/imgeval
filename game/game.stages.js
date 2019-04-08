@@ -15,7 +15,9 @@ module.exports = function(stager, settings) {
     // Stages are defined inside the client types.
 
     stager
+        .next('consent')
         .next('instructions')
+        .next('quiz')
         .repeat('training', 5)
         .next('transition')
         .repeat('test', 10)
