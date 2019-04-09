@@ -1,0 +1,107 @@
+<!doctype html>
+
+<!-- JQUERY UI STARTS -->
+<link type="text/css" href="js/jqueryui/css/ui-lightness/jquery-ui-1.8.20.custom.css" rel="Stylesheet" />
+<script src="js/jqueryui/js/jquery-1.7.2.min.js" charset="utf-8"></script>
+<script src="js/jqueryui/js/jquery-ui-1.8.20.custom.min.js" charset="utf-8"></script>
+<!-- JQUERY UI ENDS -->
+
+<!-- Loading  nodeGame libraries and CSS -->
+<link rel='stylesheet' href='/stylesheets/nodegame.css'></link>
+<link rel='stylesheet' href='css/main.css'></link>
+<!-- end -->
+
+<body>
+  <div id="root">
+    <div id="employmentIdentificationPage">
+      <h2>Instructions (1/2)</h2>
+      
+      <h3>Task: Employment Identification (test)</h3>
+      
+      <p>
+        The following figure shows an overview of an assisted facial recognition system that aims to identify if a person entering the building is an employee or not.
+      </p>
+
+      <img src="imgscore/authenticationExperimentDiverseGalleryCropped.jpg"  class="center">
+
+      <p>
+        
+      When a person enters the building, there is a physical barrier in front of which there is a security camera. On the other side, there is a receptionist with a screen monitor in front. <strong>In this study, you are playing the role of the receptionist</strong>. 
+      </p>
+
+      <p>
+      The security camera captures an image of the entering person. We will refer to this image as the <em> probe</em>. The <em>Facial Recognition System (FRS)</em> has access to a gallery containing photos of the employees. The FRS compares the probe image with the photos in the gallery. If FRS finds a <em>match</em>,
+      the barrier is automaticaly removed. Otherwise, the FRS shows the photo of the most similiar profile photo in the gallery aside with the probe image on the receptionist's screen. The receptionist compares the two images, and if he/she decides that they belong to the same person he/she grants access. Otherwise, the receptionist asks the entering person to provide second factor authentication such as an ID card. Here is an exmaple of a probe image (left) and a profile photo (right):
+      </p>
+
+      <table class="center">
+        <tr>
+          <td><img src="imgscore/instructionSample/samplea.jpg"></td>
+          <td><img src="imgscore/instructionSample/sampleb.jpg"></td>
+        </tr>
+      </table>
+
+       <button class="btn-copy btn-info-copy" id="nextButton">Continue</button>
+      
+      <div id="instructions2" style="display: none;">
+      <p>
+      We refer to <u>Facial Recognition System (FRS)</u> as a technology which is capable of identifying the <em>similarity score </em> between two images. <u>Similarity score</u> is a number between 0 and 1 indicating how similar are two images. Similarity score of 0 indicates that two images are very different and similarity score of 1 indicates that two images are very similar. One of the parameters of an FRS, is the <u>threshold value</u>. The pair of images which have similarity score higher than the threshold value are identified as a <u>match</u>.
+
+      </p>
+
+   	  <p>
+   	  You are playing the role of the receptionist. We will show you pairs of probe and profile images along with their similarity score and you should identify if two images have the same identity or not.
+
+      <ul>
+        <li>
+          If you decide that two images have the same identity, you are identifying the entering person as an employee and you will grant access. 
+        </li>
+        <li>
+          If you decide that two images have different identities, you will not grant access and instead you will ask the entering person to present second factor authentication. 
+        </li>
+      </ul>
+    
+      Note that a wrong decision could result in granting access to a non-employee and therefore having an unauthorized person in the building. Remember that the image pairs that you see are the ones for which the similarity score is below the FRS's threshold value and therefore the system could not identify a match automatically. Here is an example:
+   	  </p>
+
+      <table class="center">
+        <tr>
+          <td><img src="imgscore/instructionSample/samplea.jpg"></td>
+          <td><img src="imgscore/instructionSample/sampleb.jpg"></td>
+        </tr>
+      </table>
+
+	    <ul>
+	     	<li>
+	  	  	<b> Similarity score : .92 </b>
+	  	  </li>
+	  	  <li>
+	  	  	<font color="Indigo"> FRS threshold value to accept as a match: .98 </font>
+	  	  </li>
+
+	    </ul>
+
+	  In the next page, we will give you some instructions on how to compare two images to identify whether they belong to the same person.
+
+
+    </div>
+      
+    <div id="FRSPage" style="display:none;">
+    	<h2> Facial Recognition System</h2>
+
+    	<div> Facial recognition system blah blah </div>
+    </div>
+
+    <div id="faceComparisonPage" style="display:none;">
+    	<h2> Face comparison</h2>
+
+    	<div> To compare two images to identify if they belong to the same person, here are a few tips that you could keep in mind</div>
+    </div>
+
+
+       
+    <button class="btn-copy btn-info-copy" id="doneButton">Next</button>
+  </div>
+  
+  </div>
+</body>

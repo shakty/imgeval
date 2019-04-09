@@ -16,20 +16,27 @@ module.exports = function(stager, settings) {
 
     stager
         .next('consent')
-        .next('instructions')
+        .next('instructions1')
         .next('quiz')
+        .next('instructions2')
         .repeat('training', 5)
         .next('transition')
         .repeat('test', 10)
         .next('thankyou')
         .gameover();
 
-    stager.extendStage('instructions', {
-        steps: [ 'employmentIdentification', 'FRS', 'faceComparison' ]
+    stager.extendStage('instructions1', {
+        steps: [ 'employmentIdentification1', 'employmentIdentification2']
     });
 
+    stager.extendStage('instructions2', {
+        steps: ['FRS', 'faceComparison']
+    })
+
+    //stager.skip('consent');
     // stager.skip('instructions');
-    stager.skip('training');
+    //stager.skip('training');
     // stager.skip('test');
-    stager.skip('transition');
+    //stager.skip('transition');
+    
 };

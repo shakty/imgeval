@@ -252,6 +252,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         W.getElementById('notAgree').onclick = function(){
             console.log('not agreed to consent form')
             alert('Please exit the HIT')
+            node.done('not agreed to consent')
         }
         return;
     }
@@ -326,57 +327,158 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     }
 
     // Creating stages and steps.
-    //consent
 
+    // samira: When the stage has only one step we can directly call the extendstep?
     stager.extendStep('consent', {
         frame: 'consent.htm',
         cb: consentCB
     });
 
     // Instructions.
-    stager.extendStage('instructions', {
-        frame: 'instructions.htm'
+    stager.extendStage('instructions1', {
+        frame: 'instructions1.htm'
     });
 
-    stager.extendStep('quiz', {
-        // widget: {},
-        done: function(values) {
-            if (!values.isCorrect) {
-                node.say('quizResults', 'SERVER', false);
-                return;
-            }
-        }
-    })
-                       
-    stager.extendStep('employmentIdentification', {
+    // samira: do we have to put node.done() at the end of all steps or only
+    // when we wanna save information?
+    stager.extendStep('employmentIdentification1', {
         cb: function () {
-            
-            var next
-
-            node.game.nextBtn = next = W.getElementById("doneButton");
+            var next;
+            // samira: why do we need to set node.game.nextBtn
+            node.game.nextBtn = next = W.getElementById("continueButton");
             next.onclick = function() {
+                console.log("clicked")
+                 // samira: why do we need this?
                 this.disabled = "disabled";
                 node.done();
+              
             };
 
             // Require sample images. Calling them here already so that we load the images
             // beforehand
-
-            this.getSample();
-            this.getSimilarityScore();
-            this.getThreshold();
-            this.getRandomSample();
+            if (!node.game.wentBack) {
+                this.getSample();
+                this.getSimilarityScore();
+                this.getThreshold();
+                this.getRandomSample();
+            }
         }
+    });
+
+
+    stager.extendStep('employmentIdentification2', {
+        cb: function () {
+            var next;
+            var previous;        
+            W.hide("employmentIdentificationPage1");
+            W.show("employmentIdentificationPage2");
+            next = W.getElementById("nextButton");
+            next.onclick = function(){
+                console.log('clicked on nextButton')
+                node.done('taking the quiz');
+            };
+            
+            previous = W.getElementById("prevButton");
+            previous.onclick = function(){
+                console.log('clicked on previous button')
+                W.hide("employmentIdentificationPage2");
+                W.show("employmentIdentificationPage1");
+                var continueButton = W.getElementById('continueButton');
+                continueButton.disabled = false;
+                continueButton.onclick = function(){
+                    W.hide("employmentIdentificationPage1");
+                    W.show("employmentIdentificationPage2");
+                }
+            };
+
+            //node.done('starting the quiz');
+        }
+            
+    });
+
+
+    stager.extendStep('quiz', {
+        frame: 'quiz.htm',
+        widget: {
+            name: 'ChoiceManager', 
+            root: 'quiz',
+            options: {
+                id: 'quizzes',
+                title: false,
+                forms: [
+                    {
+                        name: 'ChoiceTable',
+                        id: 'threshold',
+                        mainText: 'The FRS threshold value is a number',
+                        shuffleChoices: true,
+                        //requiredChoice: true,
+                        title: false,
+                        choices: ['in the range 0%-100%', 'in the range 0-1',
+                         'bigger than 50%', 'smaller than 50%'],
+                        correctChoice: 1, 
+                        // choices are numbers starting at 0
+                    },
+                    {
+                        name: 'ChoiceTable',
+                        id: 'reject',
+                        shuffleChoices: true,
+                        //requiredChoice: true,
+                        title: false,
+                        //orientation: 'v',
+                        choices: ['1', '2', '3', '4'],
+                        correctChoice: 2,
+                        mainText: 'bia inja, unja na',
+                    },
+                    {
+                        name: 'ChoiceTable',
+                        id: 'disconnect',
+                        shuffleChoices: true,
+                        title: false,
+                        //orientation: 'v',
+                        choices: ['salam', 'halo', 'hi', 'bahbah'],
+                        //correctChoice: t === 'pp' ? 1 : 3,
+                        correctChoice: 1,
+                        mainText: 'gheresh bede',
+                    }
+                ]
+            }
+        },
+        cb: function() {
+            //node.widgets.append('DoneButton', W.gid('quiz'), {
+            //    title: false
+            //});
+
+
+            //node.widgets.append('BackButton', W.gid('quiz'), {
+            //    title: false
+            //});
+
+            var done = W.gid("quizDone");
+            done.onclick = function(){
+                node.done('quiz is done correctly');
+            }
+
+            var prev = W.gid('backToInstructions');
+            prev.onclick = function() {
+                node.game.wentBack = true;
+                node.game.gotoStep(node.game.getPreviousStep(2));
+                // W.hide("quiz");
+                // W.show("employmentIdentificationPage2");
+            }
+
+
+        }
+    });
+                       
+    
+    stager.extendStage('instructions2', {
+        frame : 'instructions2.htm'
     });
 
     stager.extendStep('FRS', {
        cb: function() {
 
-            W.hide("employmentIdentificationPage");
-            W.show("FRSPage");
             W.getElementById("doneButton").disabled = false;
-
-
             W.adjustFrameHeight();
         }
     });
