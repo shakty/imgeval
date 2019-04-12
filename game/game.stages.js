@@ -29,9 +29,7 @@ module.exports = function(stager, settings) {
         steps: [ 'employmentIdentification1', 'employmentIdentification2']
     });
 
-    stager.extendStage('instructions2', {
-        steps: ['FRS', 'faceComparison']
-    })
+    
 
     //stager.skip('consent');
     // stager.skip('instructions');

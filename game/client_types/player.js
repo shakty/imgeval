@@ -39,8 +39,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         this.enoughSets = false;
 
         this.displayPair = function(j) {
-            
-            console.log("inside displayPair")
+        
 
             var root, imgPair, img, img2, currentSimScore, currentThreshold;
             
@@ -78,13 +77,11 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         this.displayRandomPair = function(j) {
             
-            console.log("inside displayRandomPair")
 
             var root, imgPair, img, img2, currentSimScore, currentThreshold;
             
             // define testSample
             imgPair = this.testSample[j-1];
-            console.log("imgPair: ", imgPair);
 
             currentSimScore = this.simScore[j-1];
             currentThreshold = node.game.settings.THRESHOLD_TEST;
@@ -119,7 +116,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         // Samira: Can I pass variable like this?
         this.getSample = function() {
-            console.log('inside getSample')
             var that;
             that = this;
             // Call the server and tell him 'sample', and then reply is the output of the function. 
@@ -129,7 +125,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         };
 
         this.getRandomSample =  function(){
-            console.log('inside getRandomSample')
             var that;
             that = this;
             node.get('randomSample', function(reply) {
@@ -146,7 +141,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         };
 
         this.getSimilarityScore = function() {
-            console.log('inside getSimilarityScore')
             var that;
             that = this;
             // Call the server and tell him 'similarityScore', and then reply is the output of the function. 
@@ -156,7 +150,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         };
 
         this.getThreshold = function(){
-            console.log('inside getThreshold')
             var that;
             that = this;
             // Call the server and tell him 'threshold', and then reply is the output of the function. 
@@ -178,14 +171,12 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     //Samira
 
     function imgIdentify() {
-        console.log('inside imgIdentify');
 
         this.displayPair(node.game.getRound());
 
         // W.getElementById("similarityScore").innerHTML = "hello";
         W.getElementById('samePerson').onclick = function(){
 
-            console.log('clicked same person')
             node.done({
                 decision: 'same',
                 image: node.game.sample[node.game.getRound().a]
@@ -194,36 +185,28 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         }
 
         W.getElementById('notSamePerson').onclick = function(){
-            console.log('inja');
-
-            console.log('clicked not the same person')
             node.done({
                 decision: 'notsame',
                 image: node.game.sample[node.game.getRound().a]
             });
-            console.log("unja")
         }
         return;
     }
 
     function transitionFun(){
-        console.log('inside transitionFun');
         var next = W.getElementById('nextButton');
         next.onclick = function(){
-            console.log('Hier')
             node.done('starting test');
         }
         
     }
 
     function imgIdentifyTest(){
-        console.log('inside imgIdentifyTest');
 
         this.displayRandomPair(node.game.getRound());
 
         W.getElementById('samePersonTest').onclick = function(){
 
-            console.log("clicked same person")
             node.done({
                 decision: 'same',
                 image: node.game.testSample[node.game.getRound()-1].a
@@ -232,7 +215,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         W.getElementById('notSamePersonTest').onclick = function(){
 
-            console.log('clicked not the same person')
             node.done({
                 decision: 'notsame',
                 image: node.game.testSample[node.game.getRound()-1].a
@@ -241,28 +223,9 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         return;
     }
 
-    function consentCB(){
-        console.log("inside consentCB");
-
-        W.getElementById('agree').onclick = function(){
-            console.log("agreed to the consent form")
-            node.done('agreed')
-        }
-
-        W.getElementById('notAgree').onclick = function(){
-            console.log('not agreed to consent form')
-            alert('Please exit the HIT')
-            node.done('not agreed to consent')
-        }
-        return;
-    }
-
-
 
     function thankyou() {
-        console.log('inside thank you')
         var b, i, errStr, counter;
-        console.log('thank you.');
 
         node.on.data('WIN', function(msg) {
             var win, exitcode, codeErr;
@@ -328,10 +291,29 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
     // Creating stages and steps.
 
-    // samira: When the stage has only one step we can directly call the extendstep?
     stager.extendStep('consent', {
         frame: 'consent.htm',
-        cb: consentCB
+        donebutton: false,
+
+        //cb: consentCB
+        cb: function(){
+            var accept, notAccept;
+            accept = W.gid('agree');
+            notAccept = W.gid('notAgree');
+            accept.onclick = function() { node.done('accepted the consent'); };
+            notAccept.onclick = function(){
+            
+                node.say('notAgreed');
+                accept.disabled = true;
+                notAccept.disabled = true;
+                accept.onclick = null;
+                notAccept.onclick = null;
+                node.socket.disconnect();
+                W.hide('consent');
+                W.show('notAgreed');
+            }
+
+        }
     });
 
     // Instructions.
@@ -347,7 +329,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             // samira: why do we need to set node.game.nextBtn
             node.game.nextBtn = next = W.getElementById("continueButton");
             next.onclick = function() {
-                console.log("clicked")
                  // samira: why do we need this?
                 this.disabled = "disabled";
                 node.done();
@@ -374,13 +355,11 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
             W.show("employmentIdentificationPage2");
             next = W.getElementById("nextButton");
             next.onclick = function(){
-                console.log('clicked on nextButton')
                 node.done('taking the quiz');
             };
             
             previous = W.getElementById("prevButton");
             previous.onclick = function(){
-                console.log('clicked on previous button')
                 W.hide("employmentIdentificationPage2");
                 W.show("employmentIdentificationPage1");
                 var continueButton = W.getElementById('continueButton');
@@ -399,9 +378,10 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
     stager.extendStep('quiz', {
         frame: 'quiz.htm',
-        widget: {
+        /*widget: {
             name: 'ChoiceManager', 
             root: 'quiz',
+            title: 'Before continuing the HIT, please answer the following questions:',
             options: {
                 id: 'quizzes',
                 title: false,
@@ -420,42 +400,130 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                     },
                     {
                         name: 'ChoiceTable',
-                        id: 'reject',
+                        id: 'role',
                         shuffleChoices: true,
                         //requiredChoice: true,
                         title: false,
                         //orientation: 'v',
-                        choices: ['1', '2', '3', '4'],
-                        correctChoice: 2,
-                        mainText: 'bia inja, unja na',
+                        choices: ['employee', 'receptionist', 'none'],
+                        correctChoice: 1,
+                        mainText: 'In this study, which role are you playing' +
+                        ' in the employment identification scenario?',
                     },
                     {
                         name: 'ChoiceTable',
-                        id: 'disconnect',
+                        id: 'probe',
                         shuffleChoices: true,
                         title: false,
                         //orientation: 'v',
-                        choices: ['salam', 'halo', 'hi', 'bahbah'],
+                        choices: ['Image of the employee in the gallery',
+                         'photo taken by the security camera',
+                         'photo on the employee ID card' , 'none'],
                         //correctChoice: t === 'pp' ? 1 : 3,
                         correctChoice: 1,
-                        mainText: 'gheresh bede',
+                        mainText: 'What is a probe image?',
+                    },
+                    {
+                        name: 'ChoiceTable',
+                        id: 'match',
+                        shuffleChoices: true,
+                        title: false,
+                        //orientation: 'v',
+                        choices: ['A photo in the gallery which has similarity score higher than 50% with the probe',
+                        'A photo in the gallery which has similarity score higher than the FRS threshold value with the probe',
+                        'The photo on the employee ID card',
+                         'none'],
+                        //correctChoice: t === 'pp' ? 1 : 3,
+                        correctChoice: 1,
+                        mainText: 'What is a match?',
                     }
+                    
                 ]
             }
-        },
+        },*/
+ 
         cb: function() {
-            //node.widgets.append('DoneButton', W.gid('quiz'), {
-            //    title: false
+           // node.widgets.append('DoneButton', W.gid('root'), {
+           //     title: false,
+           //     text: 'Done'
             //});
 
 
-            //node.widgets.append('BackButton', W.gid('quiz'), {
-            //    title: false
+            //node.widgets.append('BackButton', W.gid('root'), {
+            //   title: false,
+            //   text: 'back to instructions'
             //});
+            console.log('ta inja umad')
+            var w = node.widgets;
+            console.log('gir kard')
+            this.quiz = w.append('ChoiceManager', W.gid('quiz'),{
+                id: 'quizzes',
+                title: false,
+                forms:[
+                    w.get('ChoiceTable', {
+                        id: 'threshold',
+                        mainText: 'The FRS threshold value is a number',
+                        shuffleChoices: true,
+                        //requiredChoice: true,
+                        title: false,
+                        choices: ['in the range 0%-100%', 'in the range 0-1',
+                         'bigger than 50%', 'smaller than 50%'],
+                        correctChoice: 1, 
+                    }),
 
+                    w.get('ChoiceTable', {
+                        id: 'role',
+                        shuffleChoices: true,
+                        //requiredChoice: true,
+                        title: false,
+                        //orientation: 'v',
+                        choices: ['employee', 'receptionist', 'none'],
+                        correctChoice: 1,
+                        mainText: 'In this study, which role are you playing' +
+                        ' in the employment identification scenario?',
+                    }),
+                    w.get('ChoiceTable', {
+                        id: 'probe',
+                        shuffleChoices: true,
+                        title: false,
+                        //orientation: 'v',
+                        choices: ['Image of the employee in the gallery',
+                         'photo taken by the security camera',
+                         'photo on the employee ID card' , 'none'],
+                        //correctChoice: t === 'pp' ? 1 : 3,
+                        correctChoice: 1,
+                        mainText: 'What is a probe image?',
+                    }),
+                    w.get('ChoiceTable', {
+                        id: 'match',
+                        shuffleChoices: true,
+                        title: false,
+                        //orientation: 'v',
+                        choices: ['A photo in the gallery which has similarity score higher than 50% with the probe',
+                        'A photo in the gallery which has similarity score higher than the FRS threshold value with the probe',
+                        'The photo on the employee ID card',
+                         'none'],
+                        //correctChoice: t === 'pp' ? 1 : 3,
+                        correctChoice: 1,
+                        mainText: 'What is a match?',
+                    }),
+                ]
+            });
+
+
+            var that = this;
             var done = W.gid("quizDone");
             done.onclick = function(){
-                node.done('quiz is done correctly');
+                var answers = that.quiz.getValues();
+                console.log('inside done')
+                if (answers.isCorrect){
+                    console.log('inside if')
+                    W.hide('root');
+                    node.game.gotoStep(node.game.getNextStep(1));
+                    console.log('why does it show blank then?')
+                    node.done('quiz is done correctly');
+                }
+               
             }
 
             var prev = W.gid('backToInstructions');
@@ -469,29 +537,18 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
 
         }
     });
-                       
-    
-    stager.extendStage('instructions2', {
-        frame : 'instructions2.htm'
-    });
+                    
 
-    stager.extendStep('FRS', {
-       cb: function() {
-
-            W.getElementById("doneButton").disabled = false;
-            W.adjustFrameHeight();
-        }
-    });
-
-    stager.extendStep('faceComparison', {
+   
+    stager.extendStep('instructions2', {
+        frame: 'instructions2.htm',
         cb: function() {
-
-        W.hide("FRSPage");
-        W.show("faceComparisonPage");
             
-        var next = W.getElementById("doneButton");
-        next.disabled = false;
-
+            var next = W.getElementById('continueButton');
+            // next.disabled = false;
+            next.onclick = function(){
+                node.done();
+             }
         }
     });
 

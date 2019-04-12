@@ -71,6 +71,24 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
     // Init Function. Will spawn everything.
     function init() {
 
+        var fs = require('fs');
+        // Consent form not agreed
+        node.on.data('notAgreed', function(msg){
+            channel.resgistry.updateClient(msg.from, {
+                allowReconnect: false,
+                // TODO: display a custom message (not working now)
+                accessDeniedMsg: 'You have declined the consent form '+
+                'to participate in this study. If this message is displayed '+
+                'to you in error, please contact the researchers at ... '
+            });
+            // save it
+            fs.appendFile(gameRoom.dataDir + 'notagreed.csv', msg.from, 
+                function(err){
+                    if (err) console.log(err);
+                });
+        })
+
+
         // Saves time, id and worker id of connected clients (with timeout).
         var saveWhoConnected;
         var cacheToSave, timeOutSave;
@@ -211,13 +229,13 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         node.on('get.sample', function(msg) {
             console.log('**** Get SAMPLE! ' + msg.from + ' ***');
             var res = [];  
-	        for (var i = 0; i < node.game.settings.TRAINING_IMAGES.length; i++) {
-		      res.push({
+            for (var i = 0; i < node.game.settings.TRAINING_IMAGES.length; i++) {
+              res.push({
                 a: 'training/' + node.game.settings.TRAINING_IMAGES[i] + 'a.jpg',
-		        b: 'training/' + node.game.settings.TRAINING_IMAGES[i] + 'b.jpg'
-	          });
+                b: 'training/' + node.game.settings.TRAINING_IMAGES[i] + 'b.jpg'
+              });
             }
-	        return res;
+            return res;
         });
 
 

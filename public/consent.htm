@@ -13,6 +13,19 @@
 
 <body>
   <div id="root">
+
+    <div id="notAgreed" style="display: none; margin-top: 30px; font-size: 24px;">
+      <p>
+        You have chosen to <strong>not participate</strong> in this study,
+        therefore you have been disconnected and you can now return the HIT.
+      </p>
+      <p>
+        Thank you for your interest, we hope to have you as a participant in our
+        future studies.
+      </p>
+      <button class="btn" id="show-consent">Show Consent Form</button>
+    </div>
+
     <div id="consent">
       <h2>Consent form</h2>
  
@@ -71,7 +84,7 @@
       <strong>Do you understand and consent to these terms?</strong> 
       
        
-    <button class="btn-copy btn-info-copy" id="agree" style="margin-top: 20px;">Agree</button>
+    <button class="btn-copy btn-info-copy" id="agree" style="margin-top: 20px;">Yes, I Agree</button>
 
     <button class="btn-copy btn-info-copy" id="notAgree" style="margin-top: 20px;">No thanks, I do not want to do this HIT.</button>
     
