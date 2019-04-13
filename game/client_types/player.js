@@ -159,6 +159,7 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
         }
 
         node.on('SOCKET_DISCONNECT', function() {
+            return;
             W.clearPage();
             document.title = 'disconnected';
             W.writeln('Disconnection detected. Please reconnect to ' +
@@ -490,7 +491,6 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                         choices: ['Image of the employee in the gallery',
                          'photo taken by the security camera',
                          'photo on the employee ID card' , 'none'],
-                        //correctChoice: t === 'pp' ? 1 : 3,
                         correctChoice: 1,
                         mainText: 'What is a probe image?',
                     }),
@@ -503,18 +503,23 @@ module.exports = function(treatmentName, settings, stager, setup, gameRoom) {
                         'A photo in the gallery which has similarity score higher than the FRS threshold value with the probe',
                         'The photo on the employee ID card',
                          'none'],
-                        //correctChoice: t === 'pp' ? 1 : 3,
                         correctChoice: 1,
                         mainText: 'What is a match?',
                     }),
-                ]
+                ],
+                formsOptions: {
+                    requiredChoice: true
+                }
             });
 
 
             var that = this;
             var done = W.gid("quizDone");
             done.onclick = function(){
-                var answers = that.quiz.getValues();
+                var answers = that.quiz.getValues({
+                    markAttempt: true,
+                    highlight: true
+                });
                 console.log('inside done')
                 if (answers.isCorrect){
                     console.log('inside if')
